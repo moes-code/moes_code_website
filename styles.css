@@ -55,3 +55,16 @@ body {
     font-size: 24px;
     margin-bottom: 10px;
 }
+
+/* Work-Section */
+
+.work-section {
+    background-color: #f7f7f7;
+    padding: 2em;
+    text-align: center;
+}
+
+.work-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}

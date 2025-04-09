@@ -95,3 +95,14 @@ footer {
 footer p {
     margin-bottom: 10px;
 }
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    .navbar-list {
+        flex-direction: column;
+    }
+    .navbar-list li {
+        margin-right: 0;
+    }
+}

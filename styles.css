@@ -68,3 +68,16 @@ body {
     font-size: 18px;
     margin-bottom: 10px;
 }
+
+/* Contact-Section */
+
+.contact-section {
+    background-color: #fff;
+    padding: 2em;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}

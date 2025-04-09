@@ -12,3 +12,33 @@ body {
     color: #333;
     background-color: #f9f9f9;
 }
+
+/* Navigation */
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-list li {
+    margin-right: 20px;
+}
+
+.navbar-list a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-list a:hover {
+    color: #ccc;
+}

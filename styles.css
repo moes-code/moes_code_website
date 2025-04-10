@@ -17,7 +17,7 @@ body {
 
 .navbar {
     background-color: #333;
-    color: #fff;
+    color: #FFFFFF;
     padding: 1em;
     text-align: center;
 }
@@ -35,7 +35,7 @@ body {
 }
 
 .navbar-list a {
-    color: #fff;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -46,14 +46,59 @@ body {
 /* About-Section */
 
 .about-section {
-    background-color: #fff;
+    background-image: url('images/bavaria_flag.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
     padding: 2em;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section img.portrait {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 3px solid #FFFFFF;
+    margin-right: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.about-text {
+    position: relative;
+    z-index: 2;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.about-section h1, .about-section p {
+    color: #FFFFFF;
 }
 
 .about-section h1 {
-    font-size: 24px;
+    font-size: 50px;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+.about-section p {
+    font-size: 30px;
+    margin-top: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0,5);
 }
 
 /* Work-Section */
@@ -72,7 +117,7 @@ body {
 /* Contact-Section */
 
 .contact-section {
-    background-color: #fff;
+    background-color: #FFFFFF;
     padding: 2em;
     text-align: center;
 }
@@ -86,7 +131,7 @@ body {
 
 footer {
     background-color: #333;
-    color: #fff;
+    color: #FFFFFF;
     padding: 1em;
     text-align: center;
     clear: both;

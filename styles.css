@@ -40,7 +40,14 @@ body {
 }
 
 .navbar-list a:hover {
-    color: #ccc;
+    color: #2596be;
+}
+
+.navbar-logo {
+    max-width: 4%;
+    height: auto;
+    margin-right: 2%;
+    vertical-align: middle;
 }
 
 /* About-Section */

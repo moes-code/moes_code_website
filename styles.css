@@ -16,8 +16,8 @@ body {
 /* Navigation */
 
 .navbar {
-    background-color: #333333;
-    color: #FFFFFF;
+    background-color: #003366;
+    color: #ffffff;
     padding: 1em 2em;
     display: flex;
     text-align: center;
@@ -38,7 +38,7 @@ body {
 
 .navbar-text {
     font-weight: bold;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .navbar-list {
@@ -56,7 +56,7 @@ body {
 }
 
 .navbar-list a {
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -76,7 +76,7 @@ body {
     background: #2596be;
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -5px;
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
@@ -104,7 +104,7 @@ body {
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    border: 3px solid #FFFFFF;
+    border: 3px solid #ffffff;
     margin-right: 50px;
     position: relative;
     z-index: 2;
@@ -127,7 +127,7 @@ body {
 }
 
 .about-section h1, .about-section p {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .about-section h1 {
@@ -140,7 +140,7 @@ body {
 .about-section p {
     font-size: 30px;
     margin-top: 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0,5);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* Work-Section */
@@ -159,7 +159,7 @@ body {
 /* Contact-Section */
 
 .contact-section {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 2em;
     text-align: center;
 }
@@ -173,7 +173,7 @@ body {
 
 footer {
     background-color: #333;
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 1em;
     text-align: center;
     clear: both;
@@ -187,9 +187,10 @@ footer p {
 
 @media only screen and (max-width: 768px) {
     .navbar-list {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
     }
     .navbar-list li {
-        margin-right: 0;
+        margin-left: 20px;
     }
 }

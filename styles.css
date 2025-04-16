@@ -278,24 +278,24 @@ footer p {
     margin-bottom: 10px;
 }
 
-/* Responsive Design */
+/* Responsive Design Smartphone */
 @media only screen and (max-width: 768px) {
 
     /* Headings */
     .heading {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     /* Navigation */
     .navbar {
-        padding: 20px;
+        padding: 10px;
     }
     .navbar-logo {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
     }
     .navbar-text {
-        font-size: 30px;
+        font-size: 19px;
     }
     .navbar-list {
         font-size: 20px;
@@ -306,15 +306,15 @@ footer p {
         padding: 40px;
     }
     .about-section img.portrait {
-        width: 200px;
+        width: 140px;
         height: auto;
         margin: auto 10px;
     }
     .about-section h1 {
-        font-size: 40px;
+        font-size: 24px;
     }
     .about-section p {
-        font-size: 30px;
+        font-size: 18px;
     }
 
 }

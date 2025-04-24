@@ -299,3 +299,100 @@ footer p {
     font-size: 22px;
     margin-bottom: 10px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    /* Navigation */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-list {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .navbar-list li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    /* About-Section */
+    .about-section {
+        flex-direction: column;
+        padding: 3em 1em;
+    }
+    .about-section img.portrait {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .about-section h1 {
+        font-size: 40px;
+    }
+    .about-section p {
+        font-size: 30px;
+    }
+
+    /* Work-Section */
+    .work-section {
+        padding: 10px;
+    }
+    .projects {
+        width: 90%;
+        height: auto;
+    }
+
+    /* Contact-Section */
+    .contact-section {
+        padding: 10px;
+    }
+    .contacts {
+        margin: 20px 15px;
+    }
+    .contacts img {
+        width: 80px;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 18px;
+    }
+
+}
+@media (max-width: 480px) {
+
+    /* Navigation */
+    .navbar-text {
+        font-size: 24px;
+    }
+    .navbar-list li {
+        margin-left: 15px;
+    }
+
+    /* About-Section */
+    .about-section h1 {
+        font-size: 30px;
+    }
+    .about-section p {
+        font-size: 24px;
+    }
+
+    /* Work-Section */
+    .projects h3 {
+        font-size: 22px;
+    }
+    .projects-description {
+        font-size: 18px;
+    }
+
+    /* Contact-Section */
+    .contacts h3 {
+        font-size: 22px;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 16px;
+    }
+
+}

@@ -160,6 +160,7 @@ h1, h2, h3 {
     background-image: url('images/terrazzo.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -248,20 +249,24 @@ h1, h2, h3 {
 .contacts h3 {
     color: var(--secondary-color);
     font-size: 26px;
-    margin-bottom: 20px;
+    margin-top: -5px;
+    margin-bottom: 15px;
+
+    flex-grow: 0;
 }
 .contacts {
     background-color: var(--primary-color);
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    width: calc(25% -40px);
-    height: auto;
+    aspect-ratio: 1 / 1;
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 20px;
-    padding: 20px;
+    padding: 30px;
     transition: transform 0.2s ease-in-out;
     border: 3px solid var(--third-color);
     position: relative;
@@ -274,8 +279,10 @@ h1, h2, h3 {
 .contacts img {
     width: 100px;
     height: auto;
+    margin-top: 25px;
     border-radius: 15px;
     border: 2px solid var(--third-color);
+    flex-grow: 1;
 }
 .contacts a {
     text-decoration: none;
@@ -330,6 +337,13 @@ footer p {
     }
     .about-section p {
         font-size: 18px;
+    }
+
+    /* Contact-Section */
+    .contacts {
+        width: calc(50% - 40px);
+        height: calc(60% - 40px);
+        padding: 10px;
     }
 
 }

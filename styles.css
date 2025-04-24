@@ -157,12 +157,25 @@ h1, h2, h3 {
 
 /* Work-Section */
 .work-section {
-    background-color: var(--fourth-color);
+    background-image: url('images/terrazzo.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    position: relative;
+}
+.work-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 .projects {
     background-color: var(--primary-color);
@@ -178,6 +191,8 @@ h1, h2, h3 {
     padding: 20px;
     transition: transform 0.2s ease-in-out;
     border: 3px solid var(--third-color);
+    position: relative;
+    z-index: 2;
 }
 .projects:hover {
     transform: scale(1.05);

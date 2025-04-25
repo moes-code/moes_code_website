@@ -17,7 +17,7 @@ Proudly made in Bavaria using HTML, CSS, and no JavaScript
 <!-- ToDo: Insert (HREF, TITLE, H3, SRC, ALT) -->
 <div class="contacts">
     <a href="" target="_blank" rel="noopener" title="">
-        <h3></h3>
         <img src="" alt="">
+        <h3></h3>
     </a>
 </div>

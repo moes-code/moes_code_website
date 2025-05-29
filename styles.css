@@ -4,6 +4,7 @@
   --secondary-color: #ffffff;
   --third-color: #ffd700;
   --fourth-color: #e5e5e5;
+  --fifth-color: #333333;
 }
 
 /* General Style */
@@ -369,6 +370,11 @@ footer p {
 }
 .footer-link a:hover::after {
     transform: scaleX(1);
+}
+
+/* Impressum */
+.impressum h3 {
+    color: var(--fifth-color);
 }
 
 /* Responsive Design */

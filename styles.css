@@ -219,7 +219,7 @@ h1, h2, h3 {
     background: rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
-.projects {
+.project {
     background-color: var(--primary-color);
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -236,26 +236,26 @@ h1, h2, h3 {
     position: relative;
     z-index: 2;
 }
-.projects:hover {
+.project:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
-.projects img {
+.project img {
     width: 100%;
     height: auto;
     border-radius: 15px;
     border: 2px solid var(--third-color);
 }
-.projects h3 {
+.project h3 {
     color: var(--secondary-color);
     font-size: 26px;
     margin-bottom: 20px;
 }
-.projects a {
+.project a {
     text-decoration: none;
     color: var(--secondary-color);
 }
-.projects-description {
+.project-description {
     font-size: 22px;
     display: flex;
     justify-content: center;
@@ -263,39 +263,37 @@ h1, h2, h3 {
     height: 150px;
 }
 
-/* Contact-Section */
-.contact-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-image: url(images/bavaria_flag.jpg);
+/* Certificates-Section */
+.certifications-section {
+    background-image: url('images/terrazzo.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
-.contact-section::before {
+.certifications-section::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
-.contacts h3 {
+.certification h3 {
     color: var(--secondary-color);
     font-size: 26px;
-    margin-top: -5px;
     margin-bottom: 15px;
 
     flex-grow: 0;
 }
-.contacts {
+.certification {
     background-color: var(--primary-color);
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -313,11 +311,78 @@ h1, h2, h3 {
     position: relative;
     z-index: 2;
 }
-.contacts:hover {
+.certification:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
-.contacts img {
+.certification img {
+    background-color: var(--secondary-color);
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    border-radius: 15px;
+    border: 2px solid var(--third-color);
+    flex-grow: 1;
+}
+.certification a {
+    text-decoration: none;
+}
+
+/* Contact-Section */
+.contacts-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: url(images/bavaria_flag.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.contacts-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.contact h3 {
+    color: var(--secondary-color);
+    font-size: 26px;
+    margin-top: -5px;
+    margin-bottom: 15px;
+
+    flex-grow: 0;
+}
+.contact {
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 30px;
+    transition: transform 0.2s ease-in-out;
+    border: 3px solid var(--third-color);
+    position: relative;
+    z-index: 2;
+}
+.contact:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.contact img {
     width: 100px;
     height: auto;
     margin-top: 25px;
@@ -325,7 +390,7 @@ h1, h2, h3 {
     border: 2px solid var(--third-color);
     flex-grow: 1;
 }
-.contacts a {
+.contact a {
     text-decoration: none;
 }
 
@@ -535,19 +600,19 @@ footer p {
     .work-section {
         padding: 10px;
     }
-    .projects {
+    .project {
         width: 90%;
         height: auto;
     }
 
     /* Contact-Section */
-    .contact-section {
+    .contacts-section {
         padding: 10px;
     }
-    .contacts {
+    .contact {
         margin: 20px 15px;
     }
-    .contacts img {
+    .contact img {
         width: 80px;
     }
 
@@ -576,15 +641,15 @@ footer p {
     }
 
     /* Work-Section */
-    .projects h3 {
+    .project h3 {
         font-size: 22px;
     }
-    .projects-description {
+    .project-description {
         font-size: 18px;
     }
 
     /* Contact-Section */
-    .contacts h3 {
+    .contact h3 {
         font-size: 22px;
     }
 

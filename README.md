@@ -13,9 +13,9 @@ Proudly made in Bavaria using HTML, CSS, and no JavaScript
     </a>
 </div>
 
-## Template for certificates
+## Template for certifications
 <!-- ToDo: Insert (HREF, TITLE, SRC, ALT, H3) -->
-<div class="certificate">
+<div class="certification">
     <a href="" target="_blank" rel="noopener" title="">
         <img src="" alt="">
         <h3><h3>

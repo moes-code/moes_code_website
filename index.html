@@ -5,35 +5,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="images/favicon.png" type="image/png">
-        <meta name="description" content="Moe's Code - Software Developer from Bavaria, Germany">
+        <meta name="description" content="Moe's Code - Software Developer in Bavaria, Germany">
         <meta name="keywords" content="Moe, Moe's Code, Software Developer, Bavaria, Germany">
+        <meta name="robots" content="index, follow">
         <title>Moe's Code</title>
     </head>
     <body>
-        <!-- Start Navigation -->
-        <nav id="navbar" class="navbar" aria-label="Main Navigation">
-            <div class="navbar-left">
-                <a href="" title="Main Page">
-                    <img src="images/logo.png" alt="Moe's Code - Logo" class="navbar-logo">
-                    <span class="navbar-text">Moe's Code</span>
-                </a>
-            </div>
-            <ul class ="navbar-list">
-                <li>
-                    <a href="" title="About - Section">About</a>
-                </li>
-                <li>
-                    <a href="#work-heading" title="Work - Section">Work</a>
-                </li>
-                <li>
-                    <a href="#certifications-heading" title="Certifications - Section">Certifications</a>
-                </li>
-                <li>
-                    <a href="#contact-heading" title="Contact - Section">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- End Navigation -->
+        <header role="banner">
+            <!-- Start Navigation -->
+            <nav id="navbar" class="navbar" role="navigation" aria-label="Main Navigation">
+                <div class="navbar-left">
+                    <a href="index.html" aria-label="Moe's Code - Main Page" title="Main Page">
+                        <img src="images/logo.png" alt="Moe's Code - Logo" class="navbar-logo">
+                        <span class="navbar-text">Moe's Code</span>
+                    </a>
+                </div>
+                <ul class ="navbar-list">
+                    <li>
+                        <a href="index.html" aria-current="page" aria-label="Moe's Code - About" title="About - Section">About</a>
+                    </li>
+                    <li>
+                        <a href="#work-heading" aria-label="Moe's Code - Work" title="Work - Section">Work</a>
+                    </li>
+                    <li>
+                        <a href="#certifications-heading" aria-label="Moe's Code - Certifications" title="Certifications - Section">Certifications</a>
+                    </li>
+                    <li>
+                        <a href="#contact-heading" aria-label="Moe's Code - Contacts" title="Contact - Section">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End Navigation -->
+        </header>
         <main>
             <!-- Start About -->
             <section id="about" class="about-section">
@@ -51,9 +54,9 @@
             <!-- End Work Heading -->
             <!-- Start Work -->
             <section id="work" class="work-section">
-                <!-- ToDo: Insert Project (H3, P, HREF, TITLE, SRC, ALT)-->
+                <!-- ToDo: Insert Project (H3, P, HREF, ARIA-LABEL, TITLE, SRC, ALT)-->
                 <div class="project">
-                        <a href="" target="_blank" rel="noopener" title="">
+                        <a href="" target="_blank" rel="noopener" aria-label="" title="">
                             <h3>Projects</h3>
                             <img src="images/bavaria_flag.jpg" alt="">
                             <div class="project-description">
@@ -71,9 +74,9 @@
             <!-- Start Certifications -->
             <section id="certifications" class="certifications-section">
                 <div class="certification">
-                    <a href="https://www.peoplecert.org" target="_blank" rel="noopener" title="Website - PeopleCert">
+                    <a href="https://www.peoplecert.org" target="_blank" rel="noopener" aria-label="Website - PeopleCert" title="Website - PeopleCert">
                         <img src="images/itil_4_foundation.png" alt="ITIL 4 Foundation - Certified Badge by PeopleCert">
-                        <h3>ITIL 4 Foundation<h3>
+                        <h3>ITIL 4 Foundation</h3>
                     </a>
                 </div>
             </section>
@@ -87,13 +90,13 @@
             <section id="contacts" class="contacts-section">
                 <div class="contact">
                     <!-- ToDo: Insert HREF -->
-                    <a href="mailto:" target="_blank" rel="noopener" title="Moe's Code - E-Mail Address">
+                    <a href="mailto:" target="_blank" rel="noopener" aria-label="Send Moe's Code a E-Mail" title="Moe's Code - E-Mail Address">
                         <img src="images/e_mail_logo.png" alt="E-Mail Logo">
                         <h3>E-Mail</h3>
                     </a>
                 </div>
                 <div class="contact">
-                    <a href="https://github.com/moes-code" target="_blank" rel="noopener" title="Moe's Code - GitHub">
+                    <a href="https://github.com/moes-code" target="_blank" rel="noopener" aria-label="Moe's Code - GitHub" title="Moe's Code - GitHub">
                         <img src="images/github_logo.png" alt="GitHub Logo">
                         <h3>GitHub</h3>
                     </a>
@@ -102,12 +105,12 @@
             <!-- End Contact -->
         </main>
         <!-- Start Footer -->
-        <footer>
+        <footer role="contentinfo">
             <div class="footer-text">
                 <p>2025 &copy; Moe's Code</p>
             </div>
             <div class="footer-link">
-                <p><a href="impressum.html" title="Moe's Code - Impressum | Datenschutz | AGB">Impressum | Datenschutz | AGB</a></p>
+                <p><a href="impressum.html" aria-label="Moe's Code - Impressum | Datenschutz | AGB" title="Moe's Code - Impressum | Datenschutz | AGB">Impressum | Datenschutz | AGB</a></p>
             </div>
         </footer>
         <!-- End Footer -->

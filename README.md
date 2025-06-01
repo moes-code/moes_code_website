@@ -2,9 +2,9 @@
 Proudly made in Bavaria using HTML, CSS, and no JavaScript
 
 ## Template for projects
-<!-- ToDo: Insert (HREF, TITLE, H3, SRC, ALT, P) -->
+<!-- ToDo: Insert (HREF, ARIA-LABEL, TITLE, H3, SRC, ALT, P) -->
 <div class="project">
-    <a href="" target="_blank" rel="noopener" title="">
+    <a href="" target="_blank" rel="noopener" aria-label="" title="">
         <h3></h3>
         <img src="" alt="">
         <div class="project-description">
@@ -14,18 +14,18 @@ Proudly made in Bavaria using HTML, CSS, and no JavaScript
 </div>
 
 ## Template for certifications
-<!-- ToDo: Insert (HREF, TITLE, SRC, ALT, H3) -->
+<!-- ToDo: Insert (HREF, ARIA-LABEL, TITLE, SRC, ALT, H3) -->
 <div class="certification">
-    <a href="" target="_blank" rel="noopener" title="">
+    <a href="" target="_blank" rel="noopener" aria-label="" title="">
         <img src="" alt="">
         <h3><h3>
     </a>
 </div>
 
 ## Template for contacts
-<!-- ToDo: Insert (HREF, TITLE, H3, SRC, ALT) -->
+<!-- ToDo: Insert (HREF, ARIA-LABEL, TITLE, SRC, ALT, H3) -->
 <div class="contact">
-    <a href="" target="_blank" rel="noopener" title="">
+    <a href="" target="_blank" rel="noopener" aria-label="" title="">
         <img src="" alt="">
         <h3></h3>
     </a>

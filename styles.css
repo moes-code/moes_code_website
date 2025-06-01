@@ -616,6 +616,19 @@ footer p {
         width: 80px;
     }
 
+    /* Impressum-Section */
+    .impressum-main h3 {
+        font-size: 1.5em;
+    }
+    .impressum-main p {
+        font-size: 1em;
+    }
+    .impressum-container, .datenschutz-container, .agb-container {
+        width: auto;
+        height: auto;
+        padding: 20px;
+    }
+
     /* Footer */
     footer p {
         font-size: 18px;
@@ -651,6 +664,19 @@ footer p {
     /* Contact-Section */
     .contact h3 {
         font-size: 22px;
+    }
+
+    /* Impressum-Section */
+    .impressum-main h3 {
+        font-size: 1.2em;
+    }
+    .impressum-main p {
+        font-size: 0.9em;
+    }
+    .impressum-container, .datenschutz-container, .agb-container {
+        width: auto;
+        height: auto;
+        padding: 15px;
     }
 
     /* Footer */

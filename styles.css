@@ -201,7 +201,6 @@ h1, h2, h3 {
     background-image: url('images/terrazzo.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -268,7 +267,6 @@ h1, h2, h3 {
     background-image: url('images/terrazzo.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;

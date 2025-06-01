@@ -287,8 +287,7 @@ h1, h2, h3 {
 .certification h3 {
     color: var(--secondary-color);
     font-size: 26px;
-    margin-bottom: 15px;
-
+    padding-bottom: 25px;
     flex-grow: 0;
 }
 .certification {

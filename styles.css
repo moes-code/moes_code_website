@@ -223,8 +223,8 @@ h1, h2, h3 {
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    width: 550px;
-    height: 600px;
+    width: 400px;
+    height: 1050px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -260,6 +260,7 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     height: 150px;
+    margin-top: 7px;
 }
 
 /* Certificates-Section */
@@ -567,6 +568,7 @@ footer p {
     .navbar {
         flex-direction: column;
         align-items: center;
+        padding: 1em;
     }
     .navbar-list {
         flex-direction: column;
@@ -585,6 +587,7 @@ footer p {
     .about-section img.portrait {
         margin-right: 0;
         margin-bottom: 20px;
+        max-width: 80%;
     }
     .about-section h1 {
         font-size: 40px;
@@ -600,6 +603,7 @@ footer p {
     .project {
         width: 90%;
         height: auto;
+        margin: 10px 0;
     }
 
     /* Contact-Section */
@@ -632,14 +636,16 @@ footer p {
     }
 
 }
+
 @media (max-width: 480px) {
 
     /* Navigation */
     .navbar-text {
-        font-size: 24px;
+        font-size: 20px;
     }
     .navbar-list li {
-        margin-left: 15px;
+        margin-left: 0px;
+        margin-bottom: 5px;
     }
 
     /* About-Section */
@@ -655,7 +661,7 @@ footer p {
         font-size: 22px;
     }
     .project-description {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     /* Contact-Section */

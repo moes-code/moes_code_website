@@ -1,42 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="images/favicon.png" type="image/png">
-        <meta name="description" content="Moe's Code - Software Developer in Bavaria, Germany">
-        <meta name="keywords" content="Moe, Moe's Code, Software Developer, Bavaria, Germany">
-        <meta name="robots" content="index, follow">
         <title>Moe's Code</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'moe-black': '#000000',
+                            'moe-white': '#ffffff',
+                            'moe-blue': '#007bff',
+                            'moe-yellow': '#ffd700',
+                            'moe-red': '#dc3545'
+                        }
+                    }
+                }
+            }
+        </script>
     </head>
-    <body>
-        <header role="banner">
-            <!-- Start Navigation -->
-            <nav id="navbar" class="navbar" role="navigation" aria-label="Main Navigation">
-                <div class="navbar-left">
-                    <a href="index.html" aria-label="Moe's Code - Main Page" title="Main Page">
-                        <img src="images/logo.png" alt="Moe's Code - Logo" class="navbar-logo">
-                        <span class="navbar-text">Moe's Code</span>
+    <body class="bg-moe-black min-h-screen">
+        <!-- Navigation -->
+        <nav class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue sticky top-4 z-50 max-w-6xl mx-auto mt-4">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <!-- Logo -->
+                    <a href="" class="flex items-center space-x-2 lg:space-x-4">
+                        <img src="images/logo.png" alt="Moe's Code Logo" class="h-8 w-8 lg:h-12 lg:w-12 rounded-full object-cover transform transition-transform duration-300 hover:scale-110 border-2 border-moe-blue">
+                        <span class="text-moe-white hover:text-moe-blue transition duration-300 text-lg lg:text-xl font-bold">Moe's Code</span>
                     </a>
+                    <!-- Desktop Navigation -->
+                    <div class="hidden lg:flex space-x-8">
+                        <a href="" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Über mich</a>
+                        <a href="" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Projekte</a>
+                        <a href="" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Zertifizierungen</a>
+                        <a href="" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Kontakt</a>
+                        <a href="" class="text-moe-yellow hover:text-moe-blue transition duration-300 text-lg font-medium">English</a>
+                    </div>
                 </div>
-                <ul class ="navbar-list">
-                    <li>
-                        <a href="index.html" aria-current="page" aria-label="Moe's Code - About" title="About - Section">About</a>
-                    </li>
-                    <li>
-                        <a href="#work-heading" aria-label="Moe's Code - Work" title="Work - Section">Work</a>
-                    </li>
-                    <li>
-                        <a href="#certifications-heading" aria-label="Moe's Code - Certifications" title="Certifications - Section">Certifications</a>
-                    </li>
-                    <li>
-                        <a href="#contact-heading" aria-label="Moe's Code - Contacts" title="Contact - Section">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- End Navigation -->
-        </header>
+            </div>
+        </nav>
+
+
+
         <main>
             <!-- Start About -->
             <section id="about" class="about-section">

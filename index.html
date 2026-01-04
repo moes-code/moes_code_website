@@ -7,7 +7,7 @@
         <meta property="og:url" content="https://moes-code.de/">
         <meta property="og:title" content="Moe's Code - Softwarelösungen aus Bayern">
         <meta property="og:description" content="Maßgeschneiderte Softwarelösungen von Moritz Stefan Menzel aus dem Herzen Bayerns.">
-        <!-- <meta property="og:image" content="https://moes-code.de/images/ Bild mit 1200x630px "> -->
+        <!-- ToDo: <meta property="og:image" content="https://moes-code.de/images/ Bild mit 1200x630px "> -->
         <title>Moe's Code</title>
         <link rel="icon" type="image/png" href="images/favicon.png">
         <style>
@@ -33,26 +33,29 @@
         </script>
     </head>
     <body class="bg-moe-black min-h-screen">
-        <!-- Navigation -->
-        <nav class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue sticky lg:sticky lg:top-4 z-50 max-w-6xl mx-auto mt-4">
-            <div class="max-w-4xl mx-auto px-4">
-                <div class="flex justify-between items-center py-4">
-                    <!-- Logo -->
-                    <a href="#top" class="flex items-center space-x-2 lg:space-x-4">
-                        <img src="images/logo.png" alt="Moe's Code Logo" class="h-8 w-8 lg:h-12 lg:w-12 rounded-full object-cover transform transition-transform duration-300 hover:scale-110 border-2 border-moe-blue">
-                        <span class="text-moe-white hover:text-moe-blue transition duration-300 text-lg lg:text-xl font-bold">Moe's Code</span>
-                    </a>
-                    <!-- Desktop Navigation -->
-                    <div class="hidden lg:flex space-x-8">
-                        <a href="#top" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Über mich</a>
-                        <a href="#projekte" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Projekte</a>
-                        <a href="#zertifizierungen" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Zertifizierungen</a>
-                        <a href="#kontakt-heading" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Kontakt</a>
-                        <a href="" class="text-moe-yellow hover:text-moe-blue transition duration-300 text-lg font-medium">English</a>
+        <header>
+            <!-- Navigation -->
+            <nav aria-label="Hauptnavigation" class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue sticky lg:sticky lg:top-4 z-50 max-w-6xl mx-auto mt-4">
+                <div class="max-w-4xl mx-auto px-4">
+                    <div class="flex justify-between items-center py-4">
+                        <!-- Logo -->
+                        <a href="#top" class="flex items-center space-x-2 lg:space-x-4">
+                            <img src="images/logo.png" alt="Moe's Code Logo" class="h-8 w-8 lg:h-12 lg:w-12 rounded-full object-cover transform transition-transform duration-300 hover:scale-110 border-2 border-moe-blue">
+                            <h1 class="text-moe-white hover:text-moe-blue transition duration-300 text-lg md:text-xl lg:text-2xl font-bold">Moe's Code</h1>
+                        </a>
+                        <!-- Desktop navigation -->
+                        <div class="hidden lg:flex space-x-8">
+                            <a href="#top" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Über mich</a>
+                            <a href="#projekte" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Projekte</a>
+                            <a href="#zertifizierungen" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Zertifizierungen</a>
+                            <a href="#kontakt" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Kontakt</a>
+                            <!-- ToDo: Englische seite implementieren -->
+                            <a href="" class="text-moe-yellow hover:text-moe-blue transition duration-300 text-lg font-medium">English</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
         <main>
             <!-- Über mich -->
             <section id="ueber-mich" class="bg-cover bg-center bg-no-repeat min-h-[80vh] relative rounded-3xl mx-8 my-4" style="background-image: url('images/bavaria_flag.jpg');">
@@ -63,156 +66,193 @@
                 </div>
             </section>
             <!-- Projekte -->
-            <div id="projekte" class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-8">
-                <div class="max-w-5xl mx-auto px-6 py-8">
-                    <h2 class="text-moe-white text-2xl lg:text-3xl font-bold text-center mb-8">Projekte</h2>
-                    <!-- Projects Grid -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <!-- Example project -->
-                        <div class="bg-gray-900 rounded-xl border border-moe-blue overflow-hidden hover:shadow-xl hover:shadow-moe-blue/20 transition-all duration-300 group">
-                            <!-- Screenshot -->
-                            <div class="relative overflow-hidden">
-                                <!-- ToDo: Insert sreenshot source and description -->
-                                <img src="" alt="" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
-                                <div class="absolute inset-0 bg-moe-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                            </div>
-                            <!-- Content -->
-                            <div class="p-6">
-                                <!-- ToDo: Insert project heading and description -->
-                                <h3 class="text-moe-white font-bold text-lg mb-2"></h3>
-                                <p class="text-gray-300 text-sm mb-4"></p>
-                                <!-- Tech Stack -->
-                                <div class="flex flex-wrap gap-2 mb-4">
-                                    <!-- ToDo: Insert tech stack text -->
-                                <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
-                                <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
-                                <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
+            <section id="projekte">
+                <div class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-8">
+                    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+                        <h2 class="text-moe-white text-lg md:text-xl lg:text-2xl font-bold text-center mb-6 sm:mb-8">Projekte</h2>
+                        <!-- Projects grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <!-- Example project -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue overflow-hidden hover:shadow-xl hover:shadow-moe-blue/20 transition-all duration-300 group">
+                                <!-- Screenshot -->
+                                <div class="relative overflow-hidden">
+                                    <!-- ToDo: Insert sreenshot source and description -->
+                                    <img src="" alt="" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                                    <div class="absolute inset-0 bg-moe-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                 </div>
-                                <!-- Links -->
-                                <div class="flex gap-3">
-                                    <!-- ToDo: Insert exmaple link and text -->
-                                    <a href="" class="flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200"></a>
-                                    <!-- ToDo: Insert github repo link -->
-                                    <a href="" class="flex-1 border border-moe-blue text-moe-blue hover:bg-moe-blue hover:text-white text-center py-2 px-4 rounded-lg transition-colors duration-200">GitHub</a>
+                                <!-- Content -->
+                                <div class="p-6">
+                                    <!-- ToDo: Insert project heading and description -->
+                                    <h3 class="text-moe-white font-bold text-lg mb-2"></h3>
+                                    <p class="text-gray-300 text-sm mb-4"></p>
+                                    <!-- Tech stack -->
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <!-- ToDo: Insert tech stack text -->
+                                    <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
+                                    <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
+                                    <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
+                                </div>
+                                    <!-- Links -->
+                                    <div class="flex gap-3">
+                                        <!-- ToDo: Insert exmaple link and text -->
+                                        <a href="" class="flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200"></a>
+                                        <!-- ToDo: Insert github repo link -->
+                                        <a href="" class="flex-1 border border-moe-blue text-moe-blue hover:bg-moe-blue hover:text-white text-center py-2 px-4 rounded-lg transition-colors duration-200">GitHub</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- Zertifizierungen -->
-            <div id="zertifizierungen" class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-8">
-                <div class="max-w-5xl mx-auto px-6 py-8">
-                    <h2 class="text-moe-white text-2xl lg:text-3xl font-bold text-center mb-8">Zertifizierungen</h2>
-                    <!-- Certifications Grid -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <!-- Example certification -->
-                        <div class="bg-gray-900 rounded-xl border border-moe-blue overflow-hidden hover:shadow-xl hover:shadow-moe-blue/20 transition-all duration-300 group">
-                            <!-- Certificate Logo/Badge -->
-                            <div class="relative overflow-hidden bg-gray-800">
-                                <!-- ToDo: Insert certificate logo/badge source and description -->
-                                <img src="" alt="" class="w-full h-48 object-contain p-4 group-hover:scale-105 transition-transform duration-300">
-                                <div class="absolute inset-0 bg-moe-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                            </div>
-                            <!-- Content -->
-                            <div class="p-6">
-                                <!-- ToDo: Insert certification title -->
-                                <h3 class="text-moe-white font-bold text-lg mb-2"></h3>
-                                <!-- ToDo: Insert issuing organization -->
-                                <p class="text-gray-300 text-sm mb-2 font-medium"></p>
-                                <!-- ToDo: Insert issue date -->
-                                <p class="text-gray-400 text-xs mb-4"></p>
-                                <!-- Skills/Technologies -->
-                                <div class="flex flex-wrap gap-2 mb-4">
-                                    <!-- ToDo: Insert relevant skills/technologies -->
-                                    <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
-                                    <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
-                                    <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
+            <section id="zertifizierungen">
+                <div class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-8">
+                    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+                        <h2 class="text-moe-white text-lg md:text-xl lg:text-2xl font-bold text-center mb-6 sm:mb-8">Zertifizierungen</h2>
+                        <!-- Certifications grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <!-- Example certification -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue overflow-hidden hover:shadow-xl hover:shadow-moe-blue/20 transition-all duration-300 group">
+                                <!-- Certificate logo/badge -->
+                                <div class="relative overflow-hidden bg-gray-800">
+                                    <!-- ToDo: Insert certificate logo/badge source and description -->
+                                    <img src="" alt="" class="w-full h-48 object-contain p-4 group-hover:scale-105 transition-transform duration-300">
+                                    <div class="absolute inset-0 bg-moe-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                 </div>
-                                <!-- Links -->
-                                <div class="flex gap-3">
-                                    <!-- ToDo: Insert certificate verification link -->
-                                    <a href="" class="flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200 text-sm">Verifizieren</a>
-                                    <!-- ToDo: Insert examination institute link -->
-                                    <a href="" class="flex-1 border border-moe-blue text-moe-blue hover:bg-moe-blue hover:text-white text-center py-2 px-4 rounded-lg transition-colors duration-200 text-sm">Prüfungsinstitut</a>
+                                <!-- Content -->
+                                <div class="p-6">
+                                    <!-- ToDo: Insert certification title -->
+                                    <h3 class="text-moe-white font-bold text-lg mb-2"></h3>
+                                    <!-- ToDo: Insert issuing organization -->
+                                    <p class="text-gray-300 text-sm mb-2 font-medium"></p>
+                                    <!-- ToDo: Insert issue date -->
+                                    <p class="text-gray-400 text-xs mb-4"></p>
+                                    <!-- Skills/Technologies -->
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <!-- ToDo: Insert relevant skills/technologies -->
+                                        <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
+                                        <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
+                                        <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
+                                    </div>
+                                    <!-- Links -->
+                                    <div class="flex gap-3">
+                                        <!-- ToDo: Insert certificate verification link -->
+                                        <a href="" class="flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200 text-sm">Verifizieren</a>
+                                        <!-- ToDo: Insert examination institute link -->
+                                        <a href="" class="flex-1 border border-moe-blue text-moe-blue hover:bg-moe-blue hover:text-white text-center py-2 px-4 rounded-lg transition-colors duration-200 text-sm">Prüfungsinstitut</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-
-
-    
-                        
-
-
-
-
-
-
-
-
-
-
-            <!-- Kontakt Heading -->
-            <div id="kontakt-heading" class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-4">
-                <div class="max-w-4xl mx-auto px-4 py-4">
-                <h2 class="text-moe-white text-2xl lg:text-3xl font-bold text-center">Kontakt</h2>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-            <!-- Start Work -->
-            <section id="work" class="work-section">
-                <div class="project">
-                        <a href="https://github.com/moes-code/moes_shopping_list_app_csharp" target="_blank" rel="noopener" aria-label="Moe's Code - Shopping List App" title="Moe's Code - Shopping List App">
-                            <h3>Shopping List App</h3>
-                            <img src="images/moes_shopping_list_app.png" alt="Screenshot of Moe's Code - Shopping List App">
-                            <div class="project-description">
-                                <p>A multi-platform shopping list app developed with C# and XAML in .NET MAUI</p>
+            </section>
+            <!-- Kontakt -->
+            <section id="kontakt">
+                <div class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-8">
+                    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+                        <h2 class="text-moe-white text-lg md:text-xl lg:text-2xl font-bold text-center mb-6 sm:mb-8">Kontakt</h2>
+                        <div class="max-w-3xl mx-auto space-y-8">
+                            <!-- Intro -->
+                            <div class="text-center">
+                                <p class="text-gray-300 text-lg md:text-xl lg:text-2xl">Sie haben ein interessantes Projekt im Kopf oder eine Idee? - Ich freue mich auf Ihre Nachricht!</p>
                             </div>
-                        </a>
+                            <!-- Contact items -->
+                            <address class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <!-- Email card -->
+                                <a href="mailto:mail@moes-code.de" class="block">
+                                    <div class="text-center p-6 bg-gray-900 rounded-xl border border-moe-blue/30 hover:border-moe-blue transition-colors duration-300">
+                                        <div class="w-16 h-16 bg-moe-blue/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                            <svg class="w-8 h-8 text-moe-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-moe-white font-medium mb-2">E-Mail</h3>
+                                        <p class="text-gray-300 text-sm">mail@moes-code.de</p>
+                                    </div>
+                                </a>
+                                <!-- GitHub card -->
+                                <a href="https://github.com/moes-code" target="_blank" rel="noopener noreferrer" class="block">
+                                    <div class="text-center p-6 bg-gray-900 rounded-xl border border-moe-blue/30 hover:border-moe-blue transition-colors duration-300">
+                                        <div class="w-16 h-16 bg-moe-blue/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                            <svg class="w-8 h-8 text-moe-blue" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-moe-white font-medium mb-2">GitHub</h3>
+                                        <p class="text-gray-300 text-sm">https://github.com/moes-code</p>
+                                    </div>
+                                </a>
+                            </address>
+                            <!-- Contact form -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue/30 p-6">
+                                <!-- Success/Error messages -->
+                                <div id="form-messages" class="mb-4 hidden">
+                                    <div id="success-message" class="bg-green-500/20 border border-green-500 text-green-400 px-4 py-3 rounded-lg hidden">
+                                        <div class="flex items-center">
+                                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                            </svg>
+                                            Nachricht erfolgreich gesendet!
+                                        </div>
+                                    </div>
+                                    <div id="error-message" class="bg-red-500/20 border border-red-500 text-red-400 px-4 py-3 rounded-lg hidden">
+                                        <div class="flex items-center">
+                                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                                            </svg>
+                                            Fehler beim Senden. Bitte versuche es erneut.
+                                        </div>
+                                    </div>
+                                </div>
+                                <form class="space-y-6" id="contactForm" aria-label="Kontaktformular">
+                                    <!-- Name -->
+                                    <div>
+                                        <label for="user_name" class="block text-moe-white font-medium mb-2">Name</label>
+                                        <input type="text" id="user_name" name="user_name" required
+                                            class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-moe-white placeholder-gray-400 focus:border-moe-blue focus:ring-2 focus:ring-moe-blue/20 focus:outline-none transition-colors duration-200"
+                                            placeholder="Dein Name">
+                                    </div>
+                                    <!-- E-Mail -->
+                                    <div>
+                                        <label for="user_email" class="block text-moe-white font-medium mb-2">E-Mail</label>
+                                        <input type="email" id="user_email" name="user_email" required
+                                            class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-moe-white placeholder-gray-400 focus:border-moe-blue focus:ring-2 focus:ring-moe-blue/20 focus:outline-none transition-colors duration-200"
+                                            placeholder="deine@email.com">
+                                    </div>
+                                    <!-- Betreff -->
+                                    <div>
+                                        <label for="subject" class="block text-moe-white font-medium mb-2">Betreff</label>
+                                        <input type="text" id="subject" name="subject" required
+                                        class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-moe-white placeholder-gray-400 focus:border-moe-blue focus:ring-2 focus:ring-moe-blue/20 focus:outline-none transition-colors duration-200"
+                                        placeholder="Worum geht es?">
+                                    </div>
+                                    <!-- Nachricht -->
+                                    <div>
+                                        <label for="message" class="block text-moe-white font-medium mb-2">Nachricht</label>
+                                        <textarea id="message" name="message" rows="5" required
+                                        class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-moe-white placeholder-gray-400 focus:border-moe-blue focus:ring-2 focus:ring-moe-blue/20 focus:outline-none transition-colors duration-200 resize-none"
+                                        placeholder="Deine Nachricht..."></textarea>
+                                    </div>
+                                    <!-- Submit button -->
+                                    <button type="submit" id="submit-btn"
+                                        class="w-full bg-moe-blue hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-moe-blue/20 disabled:opacity-50 disabled:cursor-not-allowed">
+                                        <span id="btn-text">Nachricht senden</span>
+                                        <span id="btn-loading" class="hidden">
+                                            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline" fill="none" viewBox="0 0 24 24">
+                                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                            </svg>
+                                            Wird gesendet...
+                                        </span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <!-- End Work -->
-      
-            <!-- Start Certifications -->
-            <section id="certifications" class="certifications-section">
-                <div class="certification">
-                    <a href="https://www.peoplecert.org" target="_blank" rel="noopener" aria-label="Website - PeopleCert" title="Website - PeopleCert">
-                        <img src="images/itil_4_foundation.png" alt="ITIL 4 Foundation - Certified Badge by PeopleCert">
-                        <h3>ITIL 4 Foundation</h3>
-                    </a>
-                </div>
-            </section>
-            <!-- End Certifications -->
-   
-            <!-- Start Contact -->
-            <section id="contacts" class="contacts-section">
-                <div class="contact">
-                    <a href="mailto:mail@moes-code.de" target="_blank" rel="noopener" aria-label="Send Moe a E-Mail" title="Moe's Code - E-Mail Address">
-                        <img src="images/e_mail_logo.png" alt="E-Mail Logo">
-                        <h3>E-Mail</h3>
-                    </a>
-                </div>
-                <div class="contact">
-                    <a href="https://github.com/moes-code" target="_blank" rel="noopener" aria-label="Moe's Code - GitHub" title="Moe's Code - GitHub">
-                        <img src="images/github_logo.png" alt="GitHub Logo">
-                        <h3>GitHub</h3>
-                    </a>
-                </div>
-            </section>
-            <!-- End Contact -->
-
         </main>
 
         <!-- Start Footer -->

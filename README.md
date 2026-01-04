@@ -25,9 +25,9 @@
                                     <!-- Links -->
                                     <div class="flex gap-3">
                                         <!-- ToDo: Insert exmaple link and text -->
-                                        <a href="" class="flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200"></a>
+                                        <a href="" target="_blank" rel="noopener noreferrer" class="block flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200"></a>
                                         <!-- ToDo: Insert github repo link -->
-                                        <a href="" class="flex-1 border border-moe-blue text-moe-blue hover:bg-moe-blue hover:text-white text-center py-2 px-4 rounded-lg transition-colors duration-200">GitHub</a>
+                                        <a href="" target="_blank" rel="noopener noreferrer" class="block flex-1 border border-moe-blue text-moe-blue hover:bg-moe-blue hover:text-white text-center py-2 px-4 rounded-lg transition-colors duration-200">GitHub</a>
                                     </div>
                                 </div>
                             </div>
@@ -60,9 +60,9 @@
                                     <!-- Links -->
                                     <div class="flex gap-3">
                                         <!-- ToDo: Insert certificate verification link -->
-                                        <a href="" class="flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200 text-sm">Verifizieren</a>
+                                        <a href="" target="_blank" rel="noopener noreferrer" class="block flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200 text-sm">Verifizieren</a>
                                         <!-- ToDo: Insert examination institute link -->
-                                        <a href="" class="flex-1 border border-moe-blue text-moe-blue hover:bg-moe-blue hover:text-white text-center py-2 px-4 rounded-lg transition-colors duration-200 text-sm">Prüfungsinstitut</a>
+                                        <a href="" target="_blank" rel="noopener noreferrer" class="block flex-1 border border-moe-blue text-moe-blue hover:bg-moe-blue hover:text-white text-center py-2 px-4 rounded-lg transition-colors duration-200 text-sm">Prüfungsinstitut</a>
                                     </div>
                                 </div>
                             </div>

@@ -34,7 +34,7 @@
     </head>
     <body class="bg-moe-black min-h-screen">
         <!-- Navigation -->
-        <nav class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue sticky top-4 z-50 max-w-6xl mx-auto mt-4">
+        <nav class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue sticky lg:sticky lg:top-4 z-50 max-w-6xl mx-auto mt-4">
             <div class="max-w-4xl mx-auto px-4">
                 <div class="flex justify-between items-center py-4">
                     <!-- Logo -->
@@ -45,8 +45,8 @@
                     <!-- Desktop Navigation -->
                     <div class="hidden lg:flex space-x-8">
                         <a href="#top" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Über mich</a>
-                        <a href="#projekte-heading" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Projekte</a>
-                        <a href="#zertifizierungen-heading" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Zertifizierungen</a>
+                        <a href="#projekte" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Projekte</a>
+                        <a href="#zertifizierungen" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Zertifizierungen</a>
                         <a href="#kontakt-heading" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Kontakt</a>
                         <a href="" class="text-moe-yellow hover:text-moe-blue transition duration-300 text-lg font-medium">English</a>
                     </div>
@@ -55,28 +55,110 @@
         </nav>
         <main>
             <!-- Über mich -->
-            <section id="ueber-mich" class="bg-cover bg-center bg-no-repeat bg-fixed min-h-[80vh] relative rounded-3xl mx-8 my-4" style="background-image: url('images/bavaria_flag.jpg');">
+            <section id="ueber-mich" class="bg-cover bg-center bg-no-repeat min-h-[80vh] relative rounded-3xl mx-8 my-4" style="background-image: url('images/bavaria_flag.jpg');">
                 <div class="absolute inset-0 bg-black bg-opacity-50 rounded-3xl"></div>
                 <div class="relative z-10 flex flex-col items-center justify-center min-h-[80vh] p-4 md:p-8">
                     <img src="images/portrait.jpg" alt="Portrait of Moe" class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-2 border-moe-yellow mb-6 transform transition-transform duration-300 hover:scale-110 focus:scale-110 focus:outline-none focus:ring-4 focus:ring-moe-blue">
                     <p class="text-moe-white text-lg md:text-xl lg:text-2xl text-center max-w-2xl md:max-w-3xl lg:max-w-4xl font-semibold drop-shadow-lg mx-auto mt-6">Servus! Ich bin Moritz Stefan Menzel – Ihr Partner für maßgeschneiderte Softwarelösungen aus dem Herzen Bayerns.</p>
                 </div>
             </section>
-            <!-- Projekte Heading -->
-            <div id="projekte-heading" class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-4">
-                <div class="max-w-4xl mx-auto px-4 py-6">
-                <h2 class="text-moe-white text-2xl lg:text-3xl font-bold text-center">Projekte</h2>
+            <!-- Projekte -->
+            <div id="projekte" class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-8">
+                <div class="max-w-5xl mx-auto px-6 py-8">
+                    <h2 class="text-moe-white text-2xl lg:text-3xl font-bold text-center mb-8">Projekte</h2>
+                    <!-- Projects Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Example project -->
+                        <div class="bg-gray-900 rounded-xl border border-moe-blue overflow-hidden hover:shadow-xl hover:shadow-moe-blue/20 transition-all duration-300 group">
+                            <!-- Screenshot -->
+                            <div class="relative overflow-hidden">
+                                <!-- ToDo: Insert sreenshot source and description -->
+                                <img src="" alt="" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                                <div class="absolute inset-0 bg-moe-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                            <!-- Content -->
+                            <div class="p-6">
+                                <!-- ToDo: Insert project heading and description -->
+                                <h3 class="text-moe-white font-bold text-lg mb-2"></h3>
+                                <p class="text-gray-300 text-sm mb-4"></p>
+                                <!-- Tech Stack -->
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <!-- ToDo: Insert tech stack text -->
+                                <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
+                                <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
+                                <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
+                                </div>
+                                <!-- Links -->
+                                <div class="flex gap-3">
+                                    <!-- ToDo: Insert exmaple link and text -->
+                                    <a href="" class="flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200"></a>
+                                    <!-- ToDo: Insert github repo link -->
+                                    <a href="" class="flex-1 border border-moe-blue text-moe-blue hover:bg-moe-blue hover:text-white text-center py-2 px-4 rounded-lg transition-colors duration-200">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Zertifizierungen Heading -->
-            <div id="zertifizierungen-heading" class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-4">
-                <div class="max-w-4xl mx-auto px-4 py-6">
-                <h2 class="text-moe-white text-2xl lg:text-3xl font-bold text-center">Zertifizierungen</h2>
+            <!-- Zertifizierungen -->
+            <div id="zertifizierungen" class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-8">
+                <div class="max-w-5xl mx-auto px-6 py-8">
+                    <h2 class="text-moe-white text-2xl lg:text-3xl font-bold text-center mb-8">Zertifizierungen</h2>
+                    <!-- Certifications Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Example certification -->
+                        <div class="bg-gray-900 rounded-xl border border-moe-blue overflow-hidden hover:shadow-xl hover:shadow-moe-blue/20 transition-all duration-300 group">
+                            <!-- Certificate Logo/Badge -->
+                            <div class="relative overflow-hidden bg-gray-800">
+                                <!-- ToDo: Insert certificate logo/badge source and description -->
+                                <img src="" alt="" class="w-full h-48 object-contain p-4 group-hover:scale-105 transition-transform duration-300">
+                                <div class="absolute inset-0 bg-moe-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                            <!-- Content -->
+                            <div class="p-6">
+                                <!-- ToDo: Insert certification title -->
+                                <h3 class="text-moe-white font-bold text-lg mb-2"></h3>
+                                <!-- ToDo: Insert issuing organization -->
+                                <p class="text-gray-300 text-sm mb-2 font-medium"></p>
+                                <!-- ToDo: Insert issue date -->
+                                <p class="text-gray-400 text-xs mb-4"></p>
+                                <!-- Skills/Technologies -->
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <!-- ToDo: Insert relevant skills/technologies -->
+                                    <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
+                                    <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
+                                    <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
+                                </div>
+                                <!-- Links -->
+                                <div class="flex gap-3">
+                                    <!-- ToDo: Insert certificate verification link -->
+                                    <a href="" class="flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200 text-sm">Verifizieren</a>
+                                    <!-- ToDo: Insert examination institute link -->
+                                    <a href="" class="flex-1 border border-moe-blue text-moe-blue hover:bg-moe-blue hover:text-white text-center py-2 px-4 rounded-lg transition-colors duration-200 text-sm">Prüfungsinstitut</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+
+    
+                        
+
+
+
+
+
+
+
+
+
+
             <!-- Kontakt Heading -->
             <div id="kontakt-heading" class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-4">
-                <div class="max-w-4xl mx-auto px-4 py-6">
+                <div class="max-w-4xl mx-auto px-4 py-4">
                 <h2 class="text-moe-white text-2xl lg:text-3xl font-bold text-center">Kontakt</h2>
                 </div>
             </div>

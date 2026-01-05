@@ -34,7 +34,7 @@
     </head>
     <body class="bg-moe-black min-h-screen">
         <!-- Navigation -->
-        <nav aria-label="Hauptnavigation" class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue sticky lg:sticky lg:top-4 z-50 max-w-6xl mx-auto mt-4">
+        <nav class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue sticky lg:sticky lg:top-4 z-50 max-w-6xl mx-auto mt-4">
             <div class="max-w-4xl mx-auto px-4">
                 <div class="flex justify-between items-center py-4">
                     <!-- Logo -->
@@ -45,9 +45,9 @@
                     <!-- Desktop navigation -->
                     <div class="hidden lg:flex space-x-8">
                         <a href="#top" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Über mich</a>
-                        <a href="#projekte" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Projekte</a>
-                        <a href="#zertifizierungen" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Zertifizierungen</a>
-                        <a href="#kontakt" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Kontakt</a>
+                        <a href="#projects" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Projekte</a>
+                        <a href="#certifications" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Zertifizierungen</a>
+                        <a href="#contact" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Kontakt</a>
                         <!-- ToDo: Englische seite implementieren -->
                         <a href="" class="text-moe-yellow hover:text-moe-blue transition duration-300 text-lg font-medium">English</a>
                     </div>
@@ -55,16 +55,16 @@
             </div>
         </nav>
         <main>
-            <!-- Über mich -->
-            <section id="ueber-mich" class="bg-cover bg-center bg-no-repeat min-h-[80vh] relative rounded-3xl mx-8 my-4" style="background-image: url('images/bavaria_flag.jpg');">
+            <!-- About me -->
+            <section id="about-me" class="bg-cover bg-center bg-no-repeat min-h-[80vh] relative rounded-3xl mx-8 my-4" style="background-image: url('images/bavaria_flag.jpg');">
                 <div class="absolute inset-0 bg-black bg-opacity-50 rounded-3xl"></div>
                 <div class="relative z-10 flex flex-col items-center justify-center min-h-[80vh] p-4 md:p-8">
                     <img src="images/portrait.jpg" alt="Portrait of Moritz Stefan Menzel" class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-2 border-moe-yellow mb-6 transform transition-transform duration-300 hover:scale-110 focus:scale-110 focus:outline-none focus:ring-4 focus:ring-moe-blue">
                     <p class="text-moe-white text-lg md:text-xl lg:text-2xl text-center max-w-2xl md:max-w-3xl lg:max-w-4xl font-semibold drop-shadow-lg mx-auto mt-6">Servus! Ich bin Moritz Stefan Menzel – Ihr Partner für maßgeschneiderte Softwarelösungen aus dem Herzen Bayerns.</p>
                 </div>
             </section>
-            <!-- Projekte -->
-            <section id="projekte">
+            <!-- Projects -->
+            <section id="projects">
                 <div class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-8">
                     <div class="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
                         <h2 class="text-moe-white text-lg md:text-xl lg:text-2xl font-bold text-center mb-6 sm:mb-8">Projekte</h2>
@@ -103,8 +103,8 @@
                     </div>
                 </div>
             </section>
-            <!-- Zertifizierungen -->
-            <section id="zertifizierungen">
+            <!-- Certifications -->
+            <section id="certifications">
                 <div class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-8">
                     <div class="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
                         <h2 class="text-moe-white text-lg md:text-xl lg:text-2xl font-bold text-center mb-6 sm:mb-8">Zertifizierungen</h2>
@@ -162,8 +162,8 @@
                     </div>
                 </div>
             </section>
-            <!-- Kontakt -->
-            <section id="kontakt">
+            <!-- Contact -->
+            <section id="contact">
                 <div class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-8">
                     <div class="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
                         <h2 class="text-moe-white text-lg md:text-xl lg:text-2xl font-bold text-center mb-6 sm:mb-8">Kontakt</h2>
@@ -235,21 +235,21 @@
                                             class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-moe-white placeholder-gray-400 focus:border-moe-blue focus:ring-2 focus:ring-moe-blue/20 focus:outline-none transition-colors duration-200"
                                             placeholder="Deine E-Mail">
                                     </div>
-                                    <!-- Betreff -->
+                                    <!-- Subject -->
                                     <div>
                                         <label for="subject" class="block text-moe-white font-medium mb-2">Betreff</label>
                                         <input type="text" id="subject" name="subject" required
                                         class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-moe-white placeholder-gray-400 focus:border-moe-blue focus:ring-2 focus:ring-moe-blue/20 focus:outline-none transition-colors duration-200"
                                         placeholder="Worum geht es?">
                                     </div>
-                                    <!-- Nachricht -->
+                                    <!-- Message -->
                                     <div>
                                         <label for="message" class="block text-moe-white font-medium mb-2">Nachricht</label>
                                         <textarea id="message" name="message" rows="5" required
                                         class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-moe-white placeholder-gray-400 focus:border-moe-blue focus:ring-2 focus:ring-moe-blue/20 focus:outline-none transition-colors duration-200 resize-none"
                                         placeholder="Deine Nachricht..."></textarea>
                                     </div>
-                                    <!-- Datenschutz checkbox -->
+                                    <!-- Privacy policy checkbox -->
                                     <div class="bg-gray-800 border border-gray-700 rounded-lg p-4">
                                         <div class="flex items-start">
                                             <div class="flex items-center h5">
@@ -257,7 +257,7 @@
                                             </div>
                                             <div class="ml-3 text-sm">
                                                 <label for="privacy" class="text-gray-300 cursor-pointer">
-                                                    Ich habe die <a href="impressum.html#datenschutz" class="text-moe-blue hover:underline">Datenschutzerklärung</a> gelesen und stimme zu.
+                                                    Ich habe die <a href="impressum.html#privacy-policy" class="text-moe-blue hover:underline">Datenschutzerklärung</a> gelesen und stimme zu.
                                                 </label>
                                             </div>
                                         </div>
@@ -316,7 +316,7 @@
                             <span>GitHub</span>
                         </a>
                     </div>
-                    <!-- Copyright und rechtliche Links -->
+                    <!-- Copyright and legal links -->
                     <div class="border-t border-moe-white/20 pt-4">
                         <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
                             <p class="text-moe-white/70 text-sm">
@@ -324,8 +324,8 @@
                             </p>
                             <div class="flex gap-4 lg:gap-6">
                                 <a href="impressum.html" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm">Impressum</a>
-                                <a href="impressum.html#datenschutz" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm">Datenschutz</a>
-                                <a href="impressum.html#agb" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm">AGB</a>
+                                <a href="impressum.html#privacy-policy" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm">Datenschutz</a>
+                                <a href="impressum.html#terms-and-conditions" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm">AGB</a>
                             </div>
                         </div>
                     </div>

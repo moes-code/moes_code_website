@@ -3,187 +3,132 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="images/favicon.png" type="image/png">
-        <meta name="description" content="Moe's Code - Impressum | Datenschutz | AGB">
-        <meta name="keywords" content="Moe, Moe's Code, Software Developer, Bavaria, Germany">
-        <meta name="robots" content="index, follow">
         <title>Moe's Code - Impressum | Datenschutz | AGB</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'moe-black': '#000000',
+                            'moe-white': '#ffffff',
+                            'moe-blue': '#007bff',
+                            'moe-yellow': '#ffd700',
+                            'moe-red': '#dc3545'
+                        }
+                    }
+                }
+            }
+        </script>
     </head>
-    <body>
-        <header>
-            <!-- Start Navigation -->
-            <nav id="navbar" class="navbar" role="navigation" aria-label="Main Navigation">
-                <div class="navbar-left">
-                    <a href="index.html" aria-label="Moe's Code - Main Page" title="Main Page">
-                        <img src="images/logo.png" alt="Moe's Code - Logo" class="navbar-logo">
-                        <span class="navbar-text">Moe's Code</span>
+    <body class="bg-moe-black min-h-screen">
+        <!-- Navigation -->
+        <nav aria-label="Impressum-Navigation" class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue sticky lg:sticky lg:top-4 z-50 max-w-6xl mx-auto mt-4">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <!-- Logo -->
+                    <a href="index.html" class="flex items-center space-x-2 lg:space-x-4">
+                        <img src="images/logo.png" alt="Moe's Code Logo" class="h-8 w-8 lg:h-12 lg:w-12 rounded-full object-cover transform transition-transform duration-300 hover:scale-110 border-2 border-moe-blue">
+                        <h1 class="text-moe-white hover:text-moe-blue transition duration-300 text-lg md:text-xl lg:text-2xl font-bold">Moe's Code</h1>
                     </a>
+                    <!-- Desktop navigation -->
+                    <div class="hidden lg:flex space-x-8">
+                        <a href="#top" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Impressum</a>
+                        <a href="#datenschutz" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Datenschutz</a>
+                        <a href="#agb" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">AGB</a>
+                        <!-- ToDo: Englische seite implementieren -->
+                        <a href="" class="text-moe-yellow hover:text-moe-blue transition duration-300 text-lg font-medium">English</a>
+                    </div>
                 </div>
-                <ul class ="navbar-list">
-                    <li>
-                        <a href="impressum.html" aria-current="page" aria-label="Moe's Code - Impressum" title="Impressum - Section">Impressum</a>
-                    </li>
-                    <li>
-                        <a href="#datenschutz-heading" aria-label="Moe's Code - Datenschutz" title="Datenschutz - Section">Datenschutz</a>
-                    </li>
-                    <li>
-                        <a href="#agb-heading" aria-label="Moe's Code - AGB" title="AGB - Section">AGB</a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- End Navigation -->
-        </header>
-        <main class="impressum-main">
-            <!-- Start Impressum Heading -->
-            <div id="impressum-heading" class="heading">
-                <h2>Impressum</h2>
             </div>
-            <!-- End Impressum Heading -->
-            <!-- Start Impressum -->
-            <section id="impressum" class="impressum-section">
-                <div class="impressum-container">
-                    <h3>Angaben gemäß § 5 TMG:</h3>
-                    <p>
-                        Moritz Stefan Menzel<br>
-                        Rösselstr. 7<br>
-                        85122 Hitzhofen
-                    </p>
-                    <h3>Kontakt:</h3>
-                    <p>
-                        Telefon: <a href="tel:+4917621376969" aria-label="Call Moe" title="Moe's Code - Phone Number">+49 (0) 176 - 213 76 969</a><br>
-                        E-Mail: <a href="mailto:mail@moes-code.de" target="_blank" rel="noopener" aria-label="Send Moe a E-Mail" title="Moe's Code - E-Mail Address">mail@moes-code.de</a>
-                    </p>
-                    <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h3>
-                    <p>
-                        Moritz Stefan Menzel<br>
-                        Rösselstr. 7<br>
-                        85122 Hitzhofen
-                    </p>
+        </nav>
+        <main>
+            <!-- Impressum -->
+            <section id="impressum">
+                <div class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-8">
+                    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+                        <h1 class="text-moe-white text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8">Impressum</h1>
+                        <div class="max-w-3xl mx-auto space-y-8">
+                            <!-- Angaben gemäß § 5 TMG -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue/30 p-6">
+                                <h2 class="text-moe-blue text-xl font-bold mb-4">Angaben gemäß § 5 TMG</h2>
+                                <div class="text-gray-300 space-y-2">
+                                    <p><strong class="text-moe-white">Moritz Stefan Menzel</strong></p>
+                                    <p>Rösselstr. 7</p>
+                                    <p>85122 Hitzhofen</p>
+                                    <p>Deutschland</p>
+                                </div>
+                            </div>
+                            <!-- Kontakt -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue/30 p-6">
+                                <h2 class="text-moe-blue text-xl font-bold mb-4">Kontakt</h2>
+                                <div class="text-gray-300 space-y-2">
+                                    <p><strong class="text-moe-white">Telefon:</strong> <a href="tel:+4917621376969" class="text-moe-blue hover:underline">+49 (0) 176 - 213 76 969</a></p>
+                                    <p><strong class="text-moe-white">E-Mail:</strong> <a href="mailto:mail@moes-code.de" class="text-moe-blue hover:underline">mail@moes-code.de</a></p>
+                                </div>
+                            </div>
+                            <!-- Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue/30 p-6">
+                                <h2 class="text-moe-blue text-xl font-bold mb-4">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h2>
+                                <div class="text-gray-300 space-y-2">
+                                    <p><strong class="text-moe-white">Moritz Stefan Menzel</strong></p>
+                                    <p>(Adresse wie oben)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <!-- End Impressum -->
-            <!-- Start Datenschutz Heading -->
-            <div id="datenschutz-heading" class="heading">
-                <h2>Datenschutz</h2>
-            </div>
-            <!-- End Datenschutz Heading -->
-            <!-- Start Datenschutz -->
-            <section id="datenschutz" class="datenschutz-section">
-                <div class="datenschutz-container">
-                    <h3>1. Allgemeines</h3>
-                    <p>
-                        Diese Website erfasst keine personenbezogenen Daten über Sie, es sei denn, Sie kontaktieren mich aktiv per E-Mail. Server-Logfiles (z.B. IP-Adresse, Uhrzeit, Browsertyp) werden ggf. durch meinen Hosting-Anbieter automatisch gespeichert, um einen sicheren und stabilen Betrieb der Seite zu gewährleisten.
-                    </p>
-                    <h3>2. Kontaktaufnahme</h3>
-                    <p>
-                        Wenn Sie mir per E-Mail schreiben, werden Ihre Angaben zwecks Bearbeitung der Anfrage gespeichert. Diese Daten gebe ich nicht ohne Ihre Einwilligung weiter.
-                    </p>
-                    <h3>3. Hosting</h3>
-                    <p>
-                        Die Website wird bei GitHub gehostet. Dabei können bestimmte Server-Logfiles gespeichert werden (z.B. IP-Adresse, Zeitpunkt des Aufrufs etc.). Diese Daten dienen ausschließlich der technischen Administration und werden nicht mit anderen Datenquellen zusammengeführt.
-                    </p>
-                    <h3>4. Ihre Rechte</h3>
-                    <p>
-                        Sie haben jederzeit das Recht auf Auskunft über Ihre bei mir gespeicherten personenbezogenen Daten, deren Herkunft, Empfänger und Zweck der Verarbeitung. Ebenso haben Sie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten.
-                    </p>
-                    <h3>5. Verantwortlicher</h3>
-                    <p>
-                        Moritz Stefan Menzel<br>
-                        Rösselstr. 7<br>
-                        85122 Hitzhofen<br>
-                        Telefon: <a href="tel:+4917621376969" aria-label="Call Moe" title="Moe's Code - Phone Number">+49 (0) 176 - 213 76 969</a><br>
-                        E-Mail: <a href="mailto:mail@moes-code.de" target="_blank" rel="noopener" aria-label="Send Moe a E-Mail" title="Moe's Code - E-Mail Address">mail@moes-code.de</a>
-                    </p>
-                    <p class="stand">
-                        Stand: Mai 2025
-                    </p>
-                </div>
-            </section>
-            <!-- End Datenschutz -->
-            <!-- Start AGB Heading -->
-            <div id="agb-heading" class="heading">
-                <h2>Allgemeine Geschäftsbedingungen (AGB)</h2>
-            </div>
-            <!-- End AGB Heading -->
-            <!-- Start AGB -->
-            <section id="agb" class="agb-section">
-                <div class="agb-container">
-                    <h3>1. Geltungsbereich</h3>
-                    <p>
-                        Diese AGB gelten für alle Verträge über Softwareentwicklungsleistungen zwischen Herrn Moritz Stefan Menzel (nachfolgend „Anbieter“) und seinen Kunden.
-                    </p>
-                    <h3>2. Vertragsgegenstand</h3>
-                    <p>
-                        Gegenstand ist die Entwicklung von Softwarelösungen, die auf die individuellen Anforderungen des Kunden zugeschnitten sind. Die konkreten Leistungen werden im jeweiligen Angebot, Pflichtenheft oder Vertrag definiert.
-                    </p>
-                    <h3>3. Leistungserbringung und Abnahme</h3>
-                    <p>
-                        Die Software wird in enger Abstimmung mit dem Kunden entwickelt. Nach Fertigstellung wird sie zur Abnahme bereitgestellt. Der Kunde ist verpflichtet, die Abnahme innerhalb von 14 Kalendertagen schriftlich zu erklären oder etwaige Mängel mitzuteilen. Erfolgt innerhalb dieser Frist keine Rückmeldung, gilt die Leistung als abgenommen.
-                    </p>
-                    <h3>4. Vergütung und Zahlungsbedingungen</h3>
-                    <p>
-                        Die Vergütung erfolgt entweder auf Stundenbasis oder als Festpreis gemäß individueller Vereinbarung. Soweit nichts anderes vereinbart wurde, sind Rechnungen innerhalb von 14 Tagen nach Erhalt ohne Abzug zu zahlen. Bei umfangreicheren Projekten kann der Anbieter Abschlagszahlungen verlangen. Der Anbieter ist gemäß § 19 Abs. 1 UStG von der Umsatzsteuer befreit; es wird keine Umsatzsteuer ausgewiesen.
-                    </p>
-                    <h3>5. Mitwirkungspflichten des Kunden</h3>
-                    <p>
-                        Der Kunde verpflichtet sich, sämtliche zur Auftragserfüllung erforderlichen Informationen, Unterlagen und Zugänge rechtzeitig zur Verfügung zu stellen. Verzögerungen infolge unterlassener Mitwirkung verlängern vereinbarte Fristen entsprechend.
-                    </p>
-                    <h3>6. Nutzungsrechte und Quellcode</h3>
-                    <p>
-                        Sofern nicht anders vereinbart, erhält der Kunde ein einfaches, nicht übertragbares Nutzungsrecht an der entwickelten Software.<br>
-                        Die Rechte an wiederverwendbaren Komponenten, Bibliotheken, Templates oder allgemeinen Entwicklungswerkzeugen verbleiben vollständig beim Anbieter.<br>
-                        Eine Herausgabe des Quellcodes erfolgt nur bei gesonderter schriftlicher Vereinbarung und gegen zusätzliches Entgelt.
-                    </p>
-                    <h3>7. Änderungswünsche</h3>
-                    <p>
-                        Änderungswünsche nach Projektstart können zu angepassten Zeit- und Kostenplänen führen. Der Anbieter wird dem Kunden dazu ein separates Angebot unterbreiten. Die Umsetzung erfolgt erst nach schriftlicher Beauftragung.
-                    </p>
-                    <h3>8. Haftung</h3>
-                    <p>
-                        Die Dienstleistung wird mit größtmöglicher Sorgfalt und von qualifiziertem Personal erbracht. Der Anbieter haftet ausschließlich bei Vorsatz oder grober Fahrlässigkeit. Eine Haftung für mittelbare Schäden, Folgeschäden, Produktionsausfälle, Betriebsunterbrechungen, entgangenen Gewinn oder sonstige indirekte Schäden – einschließlich Produkthaftpflichtschäden – ist ausdrücklich ausgeschlossen. Ist ein Schaden nachweislich auf Vorsatz oder grobe Fahrlässigkeit zurückzuführen, so ist die Haftung auf die Höhe der vom Kunden gezahlten Vergütung für die betreffende Leistung beschränkt.
-                    </p>
-                    <h3>9. Gewährleistung</h3>
-                    <p>
-                        Es gilt eine Gewährleistungsfrist von 12 Monaten ab dem Zeitpunkt der Abnahme. Etwaige Mängel sind vom Kunden unverzüglich schriftlich anzuzeigen.
-                    </p>
-                    <h3>10. Vertraulichkeit</h3>
-                    <p>
-                        Beide Parteien verpflichten sich zur Vertraulichkeit hinsichtlich aller im Rahmen der Zusammenarbeit erlangten Informationen. Die geltenden datenschutzrechtlichen Bestimmungen werden eingehalten.
-                    </p>
-                    <h3>11. Datensicherung</h3>
-                    <p>
-                        Die Verantwortung für die regelmäßige Datensicherung liegt beim Kunden, sofern keine gesonderte Vereinbarung zur Backup-Strategie besteht.
-                    </p>
-                    <h3>12. Projektverzug durch Kunden</h3>
-                    <p>
-                        Kommt der Kunde seinen Mitwirkungspflichten nicht oder verspätet nach (z.B. fehlende Freigaben, unvollständige Informationen), verlängern sich etwaige Fristen entsprechend. Mehraufwände, die dadurch entstehen, kann der Anbieter gesondert berechnen.
-                    </p>
-                    <h3>13. Schulung und Dokumentation</h3>
-                    <p>
-                        Sofern vereinbart, stellt der Anbieter technische Dokumentationen oder Schulungsleistungen bereit. Diese Leistungen sind nicht Bestandteil der Softwareentwicklung und separat zu vergüten.
-                    </p>
-                    <h3>14. Referenznennung</h3>
-                    <p>
-                        Der Anbieter ist berechtigt, das Projekt als Referenz in anonymisierter Form zu verwenden. Eine namentliche Nennung des Kunden erfolgt nur mit dessen Einwilligung.
-                    </p>
-                    <h3>15. Schlussbestimmungen</h3>
-                    <p>
-                        Es gilt das Recht der Bundesrepublik Deutschland. Gerichtsstand ist der Sitz des Anbieters, sofern der Kunde Kaufmann im Sinne des HGB ist. Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Regelungen unberührt.
-                    </p>
-                    <p class="stand">
-                        Stand: Mai 2025
-                    </p>
-                </div>
-            </section>
-            <!-- End AGB -->
         </main>
-        <!-- Start Footer -->
-        <footer>
-            <div class="footer-text">
-                <p>2025 &copy; Moe's Code</p>
+        <!-- Footer -->
+        <footer class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mb-4 mt-8">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="py-6">
+                    <!-- Logo -->
+                    <div class="flex flex-col items-center mb-6">
+                        <a href="index.html" class="flex flex-col items-center">
+                            <img src="images/logo.png" alt="Moe's Code Logo" class="h-12 w-12 lg:h-16 lg:w-16 rounded-full object-cover transform transition-transform duration-300 hover:scale-110 border-2 border-moe-blue mb-2">
+                            <h2 class="text-moe-white hover:text-moe-blue transition duration-300 text-lg md:text-xl lg:text-2xl font-bold">Moe's Code</h2>
+                        </a>
+                    </div>
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4 lg:gap-8 mb-6">
+                        <!-- E-Mail -->
+                        <a href="mailto:mail@moes-code.de" class="text-moe-white hover:text-moe-blue transition duration-300 text-sm lg:text-base flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span>E-Mail</span>
+                        </a>
+                        <!-- GitHub -->
+                        <a href="https://github.com/moes-code" target="_blank" rel="noopener noreferrer" 
+                            class="text-moe-white hover:text-moe-blue transition duration-300 text-sm lg:text-base flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                    <!-- Copyright und rechtliche Links -->
+                    <div class="border-t border-moe-white/20 pt-4">
+                        <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
+                            <p class="text-moe-white/70 text-sm">
+                                © 2026 Moe's Code
+                            </p>
+                            <div class="flex gap-4 lg:gap-6">
+                                <a href="#top" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm">Impressum</a>
+                                <a href="#datenschutz" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm">Datenschutz</a>
+                                <a href="#agb" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm">AGB</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
-        <!-- End Footer -->
     </body>
 </html>

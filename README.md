@@ -59,10 +59,8 @@
                                     </div>
                                     <!-- Links -->
                                     <div class="flex gap-3">
-                                        <!-- ToDo: Insert certificate verification link -->
-                                        <a href="" target="_blank" rel="noopener noreferrer" class="block flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200 text-sm">Verifizieren</a>
                                         <!-- ToDo: Insert examination institute link -->
-                                        <a href="" target="_blank" rel="noopener noreferrer" class="block flex-1 border border-moe-blue text-moe-blue hover:bg-moe-blue hover:text-white text-center py-2 px-4 rounded-lg transition-colors duration-200 text-sm">Prüfungsinstitut</a>
+                                        <a href="" target="_blank" rel="noopener noreferrer" class="block flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200 text-sm">Zertifizierungsstelle</a>
                                     </div>
                                 </div>
                             </div>

@@ -44,6 +44,24 @@
                         <a href="#terms-and-conditions" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">AGB</a>
                         <a href="english/legal-notice-en.html" class="text-moe-yellow hover:text-moe-blue transition duration-300 text-lg font-medium">English</a>
                     </div>
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-button" class="block lg:hidden text-moe-white hover:text-moe-blue transition duration-300 p-2">
+                        <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg id="close-icon" class="w-6 h-6 hidden text-moe-red hover:text-moe-blue transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                    <!-- Mobile navigation menu -->
+                    <div id="mobile-menu" class="hidden lg:hidden border-t border-moe-blue/30 mt-4 pt-4">
+                        <div class="flex flex-col space-y-3 pb-4">
+                            <a href="#top" class="mobile-menu-link text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">Impressum</a>
+                            <a href="#privacy-policy" class="mobile-menu-link text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">Datenschutz</a>
+                            <a href="#terms-and-conditions" class="mobile-menu-link text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">AGB</a>
+                            <a href="english/legal-notice-en.html" class="mobile-menu-link text-moe-yellow hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">English</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -360,5 +378,7 @@
                 </div>
             </div>
         </footer>
+        <!-- JavaScript -->
+        <script src="js/main.js"></script>
     </body>
 </html>

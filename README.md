@@ -1,13 +1,17 @@
 # The website of Moe's Code
 
+Servus! I'm Moritz Stefan Menzel – your partner for customized software solutions from the heart of Bavaria.
+
+A simple and intuitive shopping list app that helps you organize your shopping with custom categories.
+
 ## Template for projects
 
                             <!-- Example project -->
                             <div class="bg-gray-900 rounded-xl border border-moe-blue overflow-hidden hover:shadow-xl hover:shadow-moe-blue/20 transition-all duration-300 group">
                                 <!-- Screenshot -->
-                                <div class="relative overflow-hidden">
+                                <div class="relative overflow-hidden bg-gray-800">
                                     <!-- ToDo: Insert sreenshot source and description -->
-                                    <img src="" alt="" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                                    <img src="" alt="" class="w-full h-48 object-contain p-4 group-hover:scale-105 transition-transform duration-300">
                                     <div class="absolute inset-0 bg-moe-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                 </div>
                                 <!-- Content -->

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Moe's Code - App privacy policy</title>
+        <link rel="icon" type="image/png" href="../images/favicon.png">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'moe-black': '#000000',
+                            'moe-white': '#ffffff',
+                            'moe-blue': '#007bff',
+                            'moe-yellow': '#ffd700',
+                            'moe-red': '#dc3545'
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body class="bg-moe-black min-h-screen">
+        <!-- Navigation -->
+        <nav class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue sticky lg:sticky lg:top-4 z-50 max-w-6xl mx-auto mt-4">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <!-- Logo -->
+                    <a href="index-en.html" class="flex items-center space-x-2 lg:space-x-4">
+                        <img src="../images/logo.png" alt="Moe's Code Logo" class="h-8 w-8 lg:h-12 lg:w-12 rounded-full object-cover transform transition-transform duration-300 hover:scale-110 border-2 border-moe-blue">
+                        <h1 class="text-moe-white hover:text-moe-blue transition duration-300 text-lg md:text-xl lg:text-2xl font-bold">Moe's Code</h1>
+                    </a>
+                    <!-- Desktop navigation -->
+                    <div class="hidden lg:flex space-x-8">
+                        <a href="#top" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">App Privacy Policy</a>
+                        <a href="../app-privacy-policy.html" class="text-moe-yellow hover:text-moe-blue transition duration-300 text-lg font-medium">Deutsch</a>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-button" class="block lg:hidden text-moe-white hover:text-moe-blue transition duration-300 p-2">
+                        <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg id="close-icon" class="w-6 h-6 hidden text-moe-red hover:text-moe-blue transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                    <!-- Mobile navigation menu -->
+                    <div id="mobile-menu" class="hidden lg:hidden border-t border-moe-blue/30 mt-4 pt-4">
+                        <div class="flex flex-col space-y-3 pb-4">
+                            <a href="#top" class="mobile-menu-link text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">App Privacy Policy</a>
+                            <a href="../app-privacy-policy.html" class="mobile-menu-link text-moe-yellow hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">Deutsch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <!-- App privacy policy -->
+            <section id="privacy-policy">
+                <div class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-8">
+                    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+                        <h2 class="text-moe-white text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8">App Privacy Policy</h2>
+                        <div class="max-w-3xl mx-auto space-y-8">
+                            <!-- General information -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue/30 p-6">
+                                <h3 class="text-moe-blue text-xl font-bold mb-4">General information</h3>
+                                <div class="text-gray-300 space-y-2">
+                                    <p>This Privacy Policy describes how Moe's Code ("we", "our", or "us") handles information in our mobile applications available on Google Play Store.</p>
+                                </div>
+                            </div>
+                            <!-- Information Collection and Use  -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue/30 p-6">
+                                <h3 class="text-moe-blue text-xl font-bold mb-4">Information Collection and Use</h3>
+                                <div class="text-gray-300 space-y-2">
+                                    <p><strong>We do not collect, store, or transmit any personal data or information from our users.</strong></p>
+                                    <p>Our applications are designed with privacy in mind:</p>
+                                    <ul class="list-disc list-inside ml-4 space-y-1">
+                                        <li>All data processing occurs locally on your device</li>
+                                        <li>No personal information is collected or stored on our servers</li>
+                                        <li>No user data is transmitted to third parties</li>
+                                        <li>No tracking or analytics services are implemented</li>
+                                        <li>No advertising networks are integrated</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Data Storage -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue/30 p-6">
+                                <h3 class="text-moe-blue text-xl font-bold mb-4">Data Storage</h3>
+                                <div class="text-gray-300 space-y-2">
+                                    <p>Any data generated or used by our applications (such as user preferences, app settings, or user-created content) is stored locally on your device only. This data:</p>
+                                    <ul class="list-disc list-inside ml-4 space-y-1">
+                                        <li>Remains under your complete control</li>
+                                        <li>Is not accessible to us or any third parties</li>
+                                        <li>Can be deleted by uninstalling the application</li>
+                                        <li>Is not backed up to our servers</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Open Source Nature -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue/30 p-6">
+                                <h3 class="text-moe-blue text-xl font-bold mb-4">Open Source Nature</h3>
+                                <div class="text-gray-300 space-y-2">
+                                    <p>Our applications are open source, which means:</p>
+                                    <ul class="list-disc list-inside ml-4 space-y-1">
+                                        <li>The source code is publicly available for inspection</li>
+                                        <li>You can verify that no data collection occurs</li>
+                                        <li>The community can audit our privacy practices</li>
+                                        <li>Complete transparency in how the app functions</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Third-Party Services -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue/30 p-6">
+                                <h3 class="text-moe-blue text-xl font-bold mb-4">Third-Party Services</h3>
+                                <div class="text-gray-300 space-y-2">
+                                    <p>Our applications do not integrate with any third-party services that could collect your data, including but not limited to:</p>
+                                    <ul class="list-disc list-inside ml-4 space-y-1">
+                                        <li>Analytics services</li>
+                                        <li>Advertising networks</li>
+                                        <li>Social media platforms</li>
+                                        <li>Cloud storage services</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Children's Privacy -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue/30 p-6">
+                                <h3 class="text-moe-blue text-xl font-bold mb-4">Children's Privacy</h3>
+                                <div class="text-gray-300 space-y-2">
+                                    <p>Since we do not collect any personal information, our applications are safe for users of all ages, including children under 13.</p>
+                                </div>
+                            </div>
+                            <!-- Changes to This Privacy Policy -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue/30 p-6">
+                                <h3 class="text-moe-blue text-xl font-bold mb-4">Changes to This Privacy Policy</h3>
+                                <div class="text-gray-300 space-y-2">
+                                    <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. Since we do not collect contact information, we cannot notify users directly of changes.</p>
+                                </div>
+                            </div>
+                            <!-- Contact Us -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue/30 p-6">
+                                <h3 class="text-moe-blue text-xl font-bold mb-4">Contact Us</h3>
+                                <div class="text-gray-300 space-y-2">
+                                    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+                                    <ul>
+                                        <li><strong class="text-moe-white">E-Mail:</strong> <a href="mailto:mail@moes-code.de" class="text-moe-blue hover:underline">mail@moes-code.de</a></li>
+                                        <li><strong class="text-moe-white">GitHub:</strong> <a href="https://github.com/moes-code" target="_blank" rel="noopener noreferrer" class="text-moe-blue hover:underline">https://github.com/moes-code</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Status -->
+                            <div class="mt-8 pt-6 border-t border-moe-blue/30 text-center">
+                                <p class="text-moe-white/70 text-sm font-medium">Last updated: January 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mb-4 mt-8">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="py-6">
+                    <!-- Logo -->
+                    <div class="flex flex-col items-center mb-6">
+                        <a href="index-en.html" class="flex flex-col items-center">
+                            <img src="../images/logo.png" alt="Moe's Code Logo" class="h-12 w-12 lg:h-16 lg:w-16 rounded-full object-cover transform transition-transform duration-300 hover:scale-110 border-2 border-moe-blue mb-2">
+                            <h2 class="text-moe-white hover:text-moe-blue transition duration-300 text-lg md:text-xl lg:text-2xl font-bold">Moe's Code</h2>
+                        </a>
+                    </div>
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4 lg:gap-8 mb-6">
+                        <!-- E-Mail -->
+                        <a href="mailto:mail@moes-code.de" class="text-moe-white hover:text-moe-blue transition duration-300 text-sm lg:text-base flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span>E-Mail</span>
+                        </a>
+                        <!-- GitHub -->
+                        <a href="https://github.com/moes-code" target="_blank" rel="noopener noreferrer" 
+                            class="text-moe-white hover:text-moe-blue transition duration-300 text-sm lg:text-base flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                    <!-- Copyright and legal links -->
+                    <div class="border-t border-moe-white/20 pt-4">
+                        <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
+                            <p class="text-moe-white/70 text-sm">
+                                © 2026 Moe's Code
+                            </p>
+                            <div class="flex flex-wrap justify-center gap-3 lg:gap-6">
+                                <a href="legal-notice-en.html" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm">Legal Notice</a>
+                                <a href="legal-notice-en.html#privacy-policy" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm">Privacy Policy</a>
+                                <a href="#top" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm">App Privacy Policy</a>
+                                <a href="legal-notice-en.html#terms-and-conditions" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm">Terms & Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- JavaScript -->
+        <script src="../js/main.js"></script>
+    </body>
+</html>

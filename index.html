@@ -44,7 +44,7 @@
                     </a>
                     <!-- Desktop navigation -->
                     <div class="hidden lg:flex space-x-8">
-                        <a href="#top" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Über mich</a>
+                        <a href="#top" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Über Mich</a>
                         <a href="#projects" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Projekte</a>
                         <a href="#certifications" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Zertifizierungen</a>
                         <a href="#contact" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium">Kontakt</a>
@@ -62,7 +62,7 @@
                     <!-- Mobile navigation menu -->
                     <div id="mobile-menu" class="hidden lg:hidden border-t border-moe-blue/30 mt-4 pt-4">
                         <div class="flex flex-col space-y-3 pb-4">
-                            <a href="#top" class="mobile-menu-link text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">Über mich</a>
+                            <a href="#top" class="mobile-menu-link text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">Über Mich</a>
                             <a href="#projects" class="mobile-menu-link text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">Projekte</a>
                             <a href="#certifications" class="mobile-menu-link text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">Zertifizierungen</a>
                             <a href="#contact" class="mobile-menu-link text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">Kontakt</a>
@@ -88,32 +88,28 @@
                         <h2 class="text-moe-white text-lg md:text-xl lg:text-2xl font-bold text-center mb-6 sm:mb-8">Projekte</h2>
                         <!-- Projects grid -->
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            <!-- Example project -->
+                            <!-- Shopping List App -->
                             <div class="bg-gray-900 rounded-xl border border-moe-blue overflow-hidden hover:shadow-xl hover:shadow-moe-blue/20 transition-all duration-300 group">
                                 <!-- Screenshot -->
-                                <div class="relative overflow-hidden">
-                                    <!-- ToDo: Insert sreenshot source and description -->
-                                    <img src="" alt="" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                                <div class="relative overflow-hidden bg-gray-800">
+                                    <img src="images/shopping_list.png" alt="Shopping List App icon" class="w-full h-48 object-contain p-4 group-hover:scale-105 transition-transform duration-300">
                                     <div class="absolute inset-0 bg-moe-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                 </div>
                                 <!-- Content -->
                                 <div class="p-6">
-                                    <!-- ToDo: Insert project heading and description -->
-                                    <h3 class="text-moe-white font-bold text-lg mb-2"></h3>
-                                    <p class="text-gray-300 text-sm mb-4"></p>
+                                    <h3 class="text-moe-white font-bold text-lg mb-2">Shopping List App</h3>
+                                    <p class="text-gray-300 text-sm mb-4">Eine einfache und intuitive Einkaufslisten-App, die dir hilft, deine Einkäufe mit benutzerdefinierten Kategorien zu organisieren.</p>
                                     <!-- Tech stack -->
                                     <div class="flex flex-wrap gap-2 mb-4">
-                                        <!-- ToDo: Insert tech stack text -->
-                                    <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
-                                    <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
-                                    <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full"></span>
+                                    <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full">Kotlin</span>
+                                    <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full">Jetpack Compose</span>
+                                    <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full">SQLite</span>
                                 </div>
                                     <!-- Links -->
                                     <div class="flex gap-3">
                                         <!-- ToDo: Insert exmaple link and text -->
-                                        <a href="" target="_blank" rel="noopener noreferrer" class="block flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200"></a>
-                                        <!-- ToDo: Insert github repo link -->
-                                        <a href="" target="_blank" rel="noopener noreferrer" class="block flex-1 border border-moe-blue text-moe-blue hover:bg-moe-blue hover:text-white text-center py-2 px-4 rounded-lg transition-colors duration-200">GitHub</a>
+                                        <!-- <a href="" target="_blank" rel="noopener noreferrer" class="block flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200"></a> -->
+                                        <a href="https://github.com/moes-code/moes_shopping_list_app" target="_blank" rel="noopener noreferrer" class="block flex-1 border border-moe-blue text-moe-blue hover:bg-moe-blue hover:text-white text-center py-2 px-4 rounded-lg transition-colors duration-200">GitHub</a>
                                     </div>
                                 </div>
                             </div>
@@ -340,9 +336,10 @@
                             <p class="text-moe-white/70 text-sm">
                                 © 2026 Moe's Code
                             </p>
-                            <div class="flex gap-4 lg:gap-6">
+                            <div class="flex flex-wrap justify-center gap-3 lg:gap-6">
                                 <a href="legal-notice.html" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm">Impressum</a>
                                 <a href="legal-notice.html#privacy-policy" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm">Datenschutz</a>
+                                <a href="app-privacy-policy.html" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm">App-Datenschutz</a>
                                 <a href="legal-notice.html#terms-and-conditions" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm">AGB</a>
                             </div>
                         </div>

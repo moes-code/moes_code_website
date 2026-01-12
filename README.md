@@ -2,8 +2,6 @@
 
 Servus! I'm Moritz Stefan Menzel – your partner for customized software solutions from the heart of Bavaria.
 
-A simple and intuitive shopping list app that helps you organize your shopping with custom categories.
-
 ## Template for projects
 
                             <!-- Example project -->

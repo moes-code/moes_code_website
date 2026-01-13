@@ -166,21 +166,63 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Scroll to Top Button
-const scrollToTopBtn = document.getElementById('scroll-to-top');
+// Cookie Consent Banner
+const cookieConsent = document.getElementById('cookie-consent');
+const cookieUnderstood = document.getElementById('cookie-understood');
+  
+function checkCookieConsent() {
+    const consent = localStorage.getItem('cookieConsent');
+    if (!consent) {
+        setTimeout(() => {
+            cookieConsent.classList.remove('hidden');
+            cookieConsent.style.opacity = '0';
+            cookieConsent.style.transform = 'translateY(100%)';
+            cookieConsent.style.transition = 'opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+            
+            setTimeout(() => {
+                cookieConsent.style.opacity = '1';
+                cookieConsent.style.transform = 'translateY(0)';
+            }, 50);
+        }, 1000);
+    }
+}
+  
+function hideCookieBanner() {
+    cookieConsent.style.opacity = '0';
+    cookieConsent.style.transform = 'translateY(100%)';
+    
+    setTimeout(() => {
+        cookieConsent.classList.add('hidden');
+        cookieConsent.style.opacity = '';
+        cookieConsent.style.transform = '';
+        cookieConsent.style.transition = '';
+    }, 600);
+}
+  
+if (cookieUnderstood) {
+    cookieUnderstood.addEventListener('click', function() {
+        localStorage.setItem('cookieConsent', 'understood');
+        hideCookieBanner();
+    });
+}
 
-if (scrollToTopBtn) {
+checkCookieConsent();
+
+// Scroll to Top Button
+const scrollToTopButton = document.getElementById('scroll-to-top');
+
+if (scrollToTopButton) {
     window.addEventListener('scroll', function() {
         if (window.pageYOffset > 300) {
-            scrollToTopBtn.classList.remove('opacity-0', 'invisible');
-            scrollToTopBtn.classList.add('opacity-100', 'visible');
+            scrollToTopButton.classList.remove('opacity-0', 'invisible');
+            scrollToTopButton.classList.add('opacity-100', 'visible');
         } else {
-            scrollToTopBtn.classList.remove('opacity-100', 'visible');
-            scrollToTopBtn.classList.add('opacity-0', 'invisible');
+            scrollToTopButton.classList.remove('opacity-100', 'visible');
+            scrollToTopButton.classList.add('opacity-0', 'invisible');
         }
     });
 
-    scrollToTopBtn.addEventListener('click', function() {
+    scrollToTopButton.addEventListener('click', function() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'

@@ -1,6 +1,6 @@
 # The website of Moe's Code
 
-Servus! I'm Moritz Stefan Menzel – your partner for customized software solutions from the heart of Bavaria.
+Hello! I'm Moritz Stefan Menzel – your partner for innovative Open Source solutions from the heart of Bavaria.
 
 ## Template for projects
 

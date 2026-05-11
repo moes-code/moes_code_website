@@ -1,2 +1,1 @@
-# moes_code_website
-Moe's Code Website
+# Moe's Code Website

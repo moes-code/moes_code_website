@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Moe's Code</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="js/tailwind-config.js"></script>
+    </head>
+
+    <body class="bg-moe-black min-h-screen">
+
+        <!-- Navigation -->
+        <nav id="navbar" class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue sticky lg:sticky top-4 z-50 max-w-6xl mx-auto mt-4 transition-all duration-300 ease-in-out">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <!-- Logo -->
+                    <a href="#top" class="flex items-center space-x-2 lg:space-x-4">
+                        <img src="images/logo.png" alt="Moe's Code Logo" class="h-8 w-8 lg:h-12 lg:w-12 rounded-full object-cover transform transition-transform duration-300 hover:scale-110 border-2 border-moe-blue">
+                        <h1 class="text-moe-white hover:text-moe-blue transition duration-300 text-lg md:text-xl lg:text-2xl font-bold px-2 py-2 rounded-lg hover:bg-moe-blue/10">Moe's Code</h1>
+                    </a>
+                    <!-- Desktop navigation -->
+                    <div class="hidden lg:flex space-x-8">
+                        <a href="#top" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">About Me</a>
+                        <a href="#projects" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">Projects</a>
+                        <a href="#certifications" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">Certifications</a>
+                        <a href="#contact" class="text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">Contact</a>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-button" class="block lg:hidden text-moe-white hover:text-moe-blue transition duration-300 p-2">
+                        <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg id="close-icon" class="w-6 h-6 hidden text-moe-red hover:text-moe-blue transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                    <!-- Mobile navigation menu -->
+                    <div id="mobile-menu" class="hidden lg:hidden border-t border-moe-blue/30 mt-4 pt-4">
+                        <div class="flex flex-col space-y-3 pb-4">
+                            <a href="#top" class="mobile-menu-link text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">About Me</a>
+                            <a href="#projects" class="mobile-menu-link text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">Projects</a>
+                            <a href="#certifications" class="mobile-menu-link text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">Certifications</a>
+                            <a href="#contact" class="mobile-menu-link text-moe-white hover:text-moe-blue transition duration-300 text-lg font-medium px-2 py-2 rounded-lg hover:bg-moe-blue/10">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+
+            <!-- About me -->
+            <section id="about-me" class="bg-cover bg-center bg-no-repeat min-h-[80vh] relative rounded-3xl mx-8 my-4" style="background-image: url('images/bavaria_flag.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 rounded-3xl"></div>
+                <div class="relative z-10 flex flex-col items-center justify-center min-h-[80vh] p-4 md:p-8">
+                    <img src="images/portrait.jpg" alt="Portrait of Moritz Stefan Menzel" class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-2 border-moe-yellow mb-6 transform transition-transform duration-300 hover:scale-110 focus:scale-110 focus:outline-none focus:ring-4 focus:ring-moe-blue">
+                    <p class="text-moe-white text-lg md:text-xl lg:text-2xl text-center max-w-2xl md:max-w-3xl lg:max-w-4xl font-semibold drop-shadow-lg mx-auto mt-6">Servus! I’m Moritz Stefan Menzel — Linux & Open-Source developer from Bavaria.</p>
+                    <!-- Scroll-to-Projects Button -->
+                    <div class="text-center mt-8 md:mt-10">
+                        <a href="#projects" class="inline-block bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300 mx-auto">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects" class="scroll-mt-96 lg:scroll-mt-32">
+                <div class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-8">
+                    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+                        <h2 class="text-moe-white text-lg md:text-xl lg:text-2xl font-bold text-center mb-6 sm:mb-8">Projects</h2>
+                        <!-- Search functionality -->
+                        <div class="mb-4">
+                            <div class="relative max-w-lg mx-auto">
+                                <div class="relative">
+                                    <input type="text" id="projectSearch" placeholder="Browse projects..." class="w-full px-6 py-3 pl-12 pr-12 bg-gray-900 border-2 border-moe-blue/30 rounded-xl text-moe-white placeholder-gray-400 focus:outline-none focus:border-moe-blue focus:ring-2 focus:ring-moe-blue/20 transition-all duration-300 hover:border-moe-blue/50">
+                                    <!-- Search Icon -->
+                                    <div class="absolute left-4 top-1/2 transform -translate-y-1/2">
+                                        <svg class="w-5 h-5 text-moe-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <!-- Clear Button -->
+                                    <button id="clearProjectSearch" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-moe-blue transition-colors duration-200 opacity-0 invisible p-1 rounded-lg hover:bg-moe-blue/10">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Search results counter -->
+                            <div id="projectSearchResults" class="text-center mt-3 opacity-0 invisible transition-all duration-300">
+                                <div class="inline-flex items-center px-3 py-1 bg-moe-blue/20 border border-moe-blue/30 rounded-full">
+                                    <span class="text-sm text-moe-blue font-medium"><span id="projectResultCount">0</span> Project(s) found</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Projects grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <!-- Shopping List App -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue overflow-hidden hover:shadow-xl hover:shadow-moe-blue/20 transition-all duration-300 group">
+                                <!-- Screenshot -->
+                                <div class="relative overflow-hidden bg-gray-800">
+                                    <img src="images/shopping_list.png" alt="Shopping List App icon" class="w-full h-48 object-contain p-4 group-hover:scale-105 transition-transform duration-300">
+                                    <div class="absolute inset-0 bg-moe-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                </div>
+                                <!-- Content -->
+                                <div class="p-6">
+                                    <h3 class="text-moe-white font-bold text-lg mb-2">Shopping List App</h3>
+                                    <p class="text-gray-300 text-sm mb-4">A shopping list app for Android that lets you organize your purchases using custom categories.</p>
+                                    <!-- Tech stack -->
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full">Kotlin</span>
+                                        <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full">Jetpack Compose</span>
+                                        <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full">SQLite</span>
+                                    </div>
+                                    <!-- Links -->
+                                    <div class="flex gap-3">
+                                        <a href="https://play.google.com/store/apps/details?id=com.moes_code.moes_shopping_list_app" target="_blank" rel="noopener noreferrer" class="block flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200">App Store</a>
+                                        <a href="https://github.com/moes-code/moes_shopping_list_app" target="_blank" rel="noopener noreferrer" class="block flex-1 border border-moe-blue text-moe-blue hover:bg-moe-blue hover:text-white text-center py-2 px-4 rounded-lg transition-colors duration-200">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section id="certifications" class="scroll-mt-96 lg:scroll-mt-32">
+                <div class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-8">
+                    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+                        <h2 class="text-moe-white text-lg md:text-xl lg:text-2xl font-bold text-center mb-6 sm:mb-8">Certifications</h2>
+                        <!-- Search functionality -->
+                        <div class="mb-4">
+                            <div class="relative max-w-lg mx-auto">
+                                <div class="relative">
+                                    <input type="text" id="certificationSearch" placeholder="Browse certifications..." class="w-full px-6 py-3 pl-12 pr-12 bg-gray-900 border-2 border-moe-blue/30 rounded-xl text-moe-white placeholder-gray-400 focus:outline-none focus:border-moe-blue focus:ring-2 focus:ring-moe-blue/20 transition-all duration-300 hover:border-moe-blue/50">
+                                    <!-- Search Icon -->
+                                    <div class="absolute left-4 top-1/2 transform -translate-y-1/2">
+                                        <svg class="w-5 h-5 text-moe-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <!-- Clear Button -->
+                                    <button id="clearCertificationSearch" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-moe-blue transition-colors duration-200 opacity-0 invisible p-1 rounded-lg hover:bg-moe-blue/10">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Search results counter -->
+                            <div id="certificationSearchResults" class="text-center mt-3 opacity-0 invisible transition-all duration-300">
+                                <div class="inline-flex items-center px-3 py-1 bg-moe-blue/20 border border-moe-blue/30 rounded-full">
+                                    <span class="text-sm text-moe-blue font-medium"><span id="certificationResultCount">0</span> Certification(s) found</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Certifications grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <!-- LPIC-2 certification -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue overflow-hidden hover:shadow-xl hover:shadow-moe-blue/20 transition-all duration-300 group">
+                                <!-- Certificate logo/badge -->
+                                <div class="relative overflow-hidden bg-gray-800">
+                                    <img src="images/lpic_2_badge.png" alt="Linux Professional Institute certification 2 badge" class="w-full h-48 object-contain p-4 group-hover:scale-105 transition-transform duration-300">
+                                    <div class="absolute inset-0 bg-moe-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                </div>
+                                <!-- Content -->
+                                <div class="p-6">
+                                    <h3 class="text-moe-white font-bold text-lg mb-2">LPIC-2</h3>
+                                    <p class="text-gray-300 text-sm mb-2 font-medium">Linux Professional Institute</p>
+                                    <p class="text-gray-400 text-xs mb-4">February 2026</p>
+                                    <!-- Skills/Technologies -->
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full">Advanced System Administration</span>
+                                        <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full">Web-Services & DNS</span>
+                                        <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full">Kernel & Troubleshooting</span>
+                                    </div>
+                                    <!-- Links -->
+                                    <div class="flex gap-3">
+                                        <a href="https://www.lpi.org" target="_blank" rel="noopener noreferrer" class="block flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200 text-sm">Certification Authority</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- LPIC-1 certification -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue overflow-hidden hover:shadow-xl hover:shadow-moe-blue/20 transition-all duration-300 group">
+                                <!-- Certificate logo/badge -->
+                                <div class="relative overflow-hidden bg-gray-800">
+                                    <img src="images/lpic_1_badge.png" alt="Linux Professional Institute certification 1 badge" class="w-full h-48 object-contain p-4 group-hover:scale-105 transition-transform duration-300">
+                                    <div class="absolute inset-0 bg-moe-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                </div>
+                                <!-- Content -->
+                                <div class="p-6">
+                                    <h3 class="text-moe-white font-bold text-lg mb-2">LPIC-1</h3>
+                                    <p class="text-gray-300 text-sm mb-2 font-medium">Linux Professional Institute</p>
+                                    <p class="text-gray-400 text-xs mb-4">November 2025</p>
+                                    <!-- Skills/Technologies -->
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full">System Administration</span>
+                                        <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full">Command Line & Automation</span>
+                                        <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full">Network & Security</span>
+                                    </div>
+                                    <!-- Links -->
+                                    <div class="flex gap-3">
+                                        <a href="https://www.lpi.org" target="_blank" rel="noopener noreferrer" class="block flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200 text-sm">Certification Authority</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ITIL 4 Foundation certification -->
+                            <div class="bg-gray-900 rounded-xl border border-moe-blue overflow-hidden hover:shadow-xl hover:shadow-moe-blue/20 transition-all duration-300 group">
+                                <!-- Certificate logo/badge -->
+                                <div class="relative overflow-hidden bg-gray-800">
+                                    <img src="images/itil_4_foundation_badge.png" alt="ITIL 4 Foundation certification badge" class="w-full h-48 object-contain p-4 group-hover:scale-105 transition-transform duration-300">
+                                    <div class="absolute inset-0 bg-moe-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                </div>
+                                <!-- Content -->
+                                <div class="p-6">
+                                    <h3 class="text-moe-white font-bold text-lg mb-2">ITIL 4 Foundation</h3>
+                                    <p class="text-gray-300 text-sm mb-2 font-medium">PeopleCert</p>
+                                    <p class="text-gray-400 text-xs mb-4">March 2025</p>
+                                    <!-- Skills/Technologies -->
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full">IT Service Management Fundamentals</span>
+                                        <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full">Service-oriented Thinking</span>
+                                        <span class="px-2 py-1 bg-moe-blue/20 text-moe-blue text-xs rounded-full">Continuous Improvement</span>
+                                    </div>
+                                    <!-- Links -->
+                                    <div class="flex gap-3">
+                                        <a href="https://www.peoplecert.org" target="_blank" rel="noopener noreferrer" class="block flex-1 bg-moe-blue hover:bg-blue-600 text-white text-center py-2 px-4 rounded-lg transition-colors duration-200 text-sm">Certification Authority</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="scroll-mt-96 lg:scroll-mt-32">
+                <div class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mt-8">
+                    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+                        <h2 class="text-moe-white text-lg md:text-xl lg:text-2xl font-bold text-center mb-6 sm:mb-8">Contact</h2>
+                        <div class="max-w-3xl mx-auto space-y-8">
+                            <!-- Intro -->
+                            <div class="text-center">
+                                <p class="text-gray-300 text-lg md:text-xl lg:text-2xl">Got an interesting project or idea? I’d love to hear from you.</p>
+                            </div>
+                            <!-- Contact items -->
+                            <address class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                                <!-- Email card -->
+                                <a href="mailto:mail@moes-code.de" class="block">
+                                    <div class="text-center p-6 bg-gray-900 rounded-xl border border-moe-blue/30 hover:border-moe-blue transition-colors duration-300">
+                                        <div class="w-16 h-16 bg-moe-blue/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                            <svg class="w-8 h-8 text-moe-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-moe-white font-medium mb-2">E-Mail</h3>
+                                        <p class="text-gray-300 text-sm">mail@moes-code.de</p>
+                                    </div>
+                                </a>
+                                <!-- Phone card -->
+                                <a href="tel:+4984583690912" class="block">
+                                    <div class="text-center p-6 bg-gray-900 rounded-xl border border-moe-blue/30 hover:border-moe-blue transition-colors duration-300">
+                                        <div class="w-16 h-16 bg-moe-blue/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                            <svg class="w-8 h-8 text-moe-blue" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-moe-white font-medium mb-2">Phone</h3>
+                                        <p class="text-gray-300 text-sm">+49 (0) 8458 - 369 09 12</p>
+                                    </div>
+                                </a>
+                                <!-- GitHub card -->
+                                <a href="https://github.com/moes-code" target="_blank" rel="noopener noreferrer" class="block">
+                                    <div class="text-center p-6 bg-gray-900 rounded-xl border border-moe-blue/30 hover:border-moe-blue transition-colors duration-300">
+                                        <div class="w-16 h-16 bg-moe-blue/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                            <svg class="w-8 h-8 text-moe-blue" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-moe-white font-medium mb-2">GitHub</h3>
+                                        <p class="text-gray-300 text-sm">Moes-Code</p>
+                                    </div>
+                                </a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-moe-black shadow-lg rounded-3xl border-2 border-moe-blue max-w-6xl mx-auto mb-4 mt-8">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="py-6">
+                    <!-- Logo -->
+                    <div class="flex flex-col items-center mb-6">
+                        <a href="#top" class="flex flex-col items-center">
+                            <img src="images/logo.png" alt="Moe's Code Logo" class="h-12 w-12 lg:h-16 lg:w-16 rounded-full object-cover transform transition-transform duration-300 hover:scale-110 border-2 border-moe-blue mb-2">
+                            <h2 class="text-moe-white hover:text-moe-blue transition duration-300 text-lg md:text-xl lg:text-2xl font-bold px-2 py-2 rounded-lg hover:bg-moe-blue/10">Moe's Code</h2>
+                        </a>
+                    </div>
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4 lg:gap-8 mb-6">
+                        <!-- E-Mail -->
+                        <a href="mailto:mail@moes-code.de" class="text-moe-white hover:text-moe-blue transition duration-300 text-sm lg:text-base flex items-center space-x-2 px-2 py-2 rounded-lg hover:bg-moe-blue/10">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span>E-Mail</span>
+                        </a>
+                        <!-- Phone -->
+                        <a href="tel:+4984583690912" class="text-moe-white hover:text-moe-blue transition duration-300 text-sm lg:text-base flex items-center space-x-2 px-2 py-2 rounded-lg hover:bg-moe-blue/10">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <span>Phone</span>
+                        </a>
+                        <!-- GitHub -->
+                        <a href="https://github.com/moes-code" target="_blank" rel="noopener noreferrer" class="text-moe-white hover:text-moe-blue transition duration-300 text-sm lg:text-base flex items-center space-x-2 px-2 py-2 rounded-lg hover:bg-moe-blue/10">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                    <!-- Copyright and legal links -->
+                    <div class="border-t border-moe-white/20 pt-4">
+                        <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
+                            <p class="text-moe-white/70 text-sm">© 2026 Moe's Code</p>
+                            <div class="flex flex-wrap justify-center gap-3 lg:gap-6">
+                                <a href="legal-notice.html" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm px-2 py-2 rounded-lg hover:bg-moe-blue/10">Legal Notice</a>
+                                <a href="privacy-policy.html" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm px-2 py-2 rounded-lg hover:bg-moe-blue/10">Privacy Policy</a>
+                                <a href="app-privacy-policy.html" class="text-moe-white/70 hover:text-moe-blue transition duration-300 text-sm px-2 py-2 rounded-lg hover:bg-moe-blue/10">App Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Scroll to Top Button -->
+        <button id="scroll-to-top" class="fixed bottom-8 right-8 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300 z-50">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/>
+            </svg>
+        </button>
+
+        <!-- JavaScript -->
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
